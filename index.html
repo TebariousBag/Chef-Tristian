@@ -7,24 +7,29 @@
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 	<link href="styles.css" rel="stylesheet">
 </head>
-<body>
-<header>
+<body class="w-100 p-0 m-0">
+<header class="w-100">
 	<!-- Menu -->
-	<div class="row bg-dark text-light p-2">
-		<div class="col d-flex align-items-center justify-content-start ms-5 h-100 mv-2">
-		<img src="https://placehold.co/450x200" height="50px" width="auto">
-		</div>
-		<div class="col">
-		<nav class="d-flex align-items-center justify-content-end h-100">
-			<a class="fs-5 mx-2 nav-link" href="#">Home</a>
-			<a class="fs-5 mx-2 nav-link" href="#">Recipes</a>
-			<a class="fs-5 mx-2 nav-link" href="#">Contact</a>
-		</nav>
-		</div>
-	</div>
+	 <!-- Trying Container Fluid-->
+	<div class="container-fluid bg-dark">
+        <div class="row align-items-center p-3">
+            <!-- Logo -->
+            <div class="col-6 d-flex align-items-center">
+                <img class="img-fluid" src="https://placehold.co/150x50">
+            </div>
+            <!-- Nav -->
+            <div class="col-6 text-light">
+                <nav class="d-flex justify-content-end">
+                    <a class="fs-5 mx-3 nav-link" href="#">Home</a>
+                    <a class="fs-5 mx-3 nav-link" href="#">Recipes</a>
+                    <a class="fs-5 mx-3 nav-link" href="#">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </div>
 	<!-- Hero Section -->
 	 <!-- I would have rather done this part in CSS -->
-	<div class="bg-dark text-light" style="background-image: url('https://placehold.co/450x200'); background-size: cover; background-position: center; height: 750px;">
+	<div class="bg-dark text-light w-100" style="background-image: url('https://placehold.co/450x200'); background-size: cover; background-position: center; height: 750px;">
 	</div>
 	<!-- text area -->
 	<div class="d-flex justify-content-center align-items-center bg-dark p-3">
@@ -36,9 +41,9 @@
 		</div>
 	</div>
 </header>
-<main>
+<main class="w-100">
 	<!-- Carousel Section, with Aside -->
-	<section class="row bg-light text-dark">
+	<section class="row bg-light text-dark w-100">
 		<!-- aside on left -->
 		<aside class="d-flex flex-column col-3 align-items-start justify-content-center bg-secondary text-light p-3">
 			<div class="d-flex flex-column align-items-center justify-content-between w-100 p-3">
@@ -68,14 +73,14 @@
 		</aside>
 		<!-- Carousel on right -->
 		 <!-- Start of Carousel -->
-		 <div class="col-9 carousel slide" id="fav_carousel">
+		 <div class="col-9 d-flex align-items-center justify-content-center carousel slide p-3" id="fav_carousel">
 			<!-- Carousel Items -->
 			<div class="carousel-inner">
 				<!-- First Card -->
 				 <!-- Bootstrap has a class for img on top on the cards -->
 				<div class="carousel-item active">
 					<div class="card">
-						<img src="https://placehold.co/450x200" class="card-img-top" alt="Dish Image">
+						<img src="https://placehold.co/450x200" class="card-img-top">
 						<div class="card-body">
 							<h5 class="card-title">Ramen Noodles</h5>
 							<p class="card-text">asdfds sdfsdgf sfdg dfg gfd gfd gdf gdfg kajdfhaksjdhj aksjdhsak afjh aksdhjkashd aksjdhas.</p>
@@ -85,7 +90,7 @@
 				<!-- Second Card -->
 				<div class="carousel-item">
 					<div class="card">
-						<img src="https://placehold.co/450x200" class="card-img-top" alt="Dish Image">
+						<img src="https://placehold.co/450x200" class="card-img-top">
 						<div class="card-body">
 							<h5 class="card-title">Taco</h5>
 							<p class="card-text">sdfgdfsfgfdsg fdsgsfdg sdfgfdsg sdfgdfsgffdsg dsfgdfsg sdfg dsfg sdfg sdfgdfgsdfgdfsgf dsfgdfsgfdg</p>
@@ -95,7 +100,7 @@
 				<!-- Third Card -->
 				<div class="carousel-item">
 					<div class="card">
-						<img src="https://placehold.co/450x200" class="card-img-top" alt="Dish Image">
+						<img src="https://placehold.co/450x200" class="card-img-top">
 						<div class="card-body">
 							<h5 class="card-title">Breakfast Hot Dog</h5>
 							<p class="card-text">sdfgfdsg dfsg sdfg sdfgdfsgsdf sdfgdsfgdf sdfgsdfgfds sdfgfdsgdf dfsfgfdg sdfgdfgfds sdfgdfsgsdfg</p>
@@ -105,7 +110,7 @@
 				<!-- Fourth Card -->
 				<div class="carousel-item">
 					<div class="card">
-						<img src="https://placehold.co/450x200" class="card-img-top" alt="Dish Image">
+						<img src="https://placehold.co/450x200" class="card-img-top">
 						<div class="card-body">
 							<h5 class="card-title">Little Tuna</h5>
 							<p class="card-text">sdfgsdf dfsg dfsfgsdfgsdfghgdsfgsdfg sdfg dsfg sdfgdfsg sdfgdfsg sdfgdfsgfds dfsgdfsgsdfg sdfgdfgdfgsdfg</p>
@@ -125,7 +130,7 @@
 		</div>
 	</section>
 	<!-- About Me Section -->
-	<section class="bg-dark text-light p-3">
+	<section class="bg-dark text-light p-3 w-100">
 		<div class="align-items-center justify-content-center text-center p-3 mb-4">
 			<h1>About the Chef</h1>
 		</div>
