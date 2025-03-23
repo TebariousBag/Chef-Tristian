@@ -11,14 +11,14 @@
 <header>
 	<!-- Menu -->
 	<div class="row bg-dark text-light p-2">
-		<div class="col d-flex align-items-center justify-content-start h-100 mv-2">
-		<img src="https://placehold.co/450x200" height="75px" width="auto">
+		<div class="col d-flex align-items-center justify-content-start ms-5 h-100 mv-2">
+		<img src="https://placehold.co/450x200" height="50px" width="auto">
 		</div>
 		<div class="col">
 		<nav class="d-flex align-items-center justify-content-end h-100">
-			<a class="fs-4 mx-2 nav-link" href="#">Home</a>
-			<a class="fs-4 mx-2 nav-link" href="#">Recipes</a>
-			<a class="fs-4 mx-2 nav-link" href="#">Contact</a>
+			<a class="fs-5 mx-2 nav-link" href="#">Home</a>
+			<a class="fs-5 mx-2 nav-link" href="#">Recipes</a>
+			<a class="fs-5 mx-2 nav-link" href="#">Contact</a>
 		</nav>
 		</div>
 	</div>
@@ -40,44 +40,91 @@
 	<!-- Carousel Section, with Aside -->
 	<section class="row bg-light text-dark">
 		<!-- aside on left -->
-		<aside class="d-flex flex-column col-3 align-items-start justify-content-center bg-secondary text-light">
-			<div class="d-flex align-items-center justify-content-between w-100 p-2">
-				<h2>Favorite Recipes</h2>
+		<aside class="d-flex flex-column col-3 align-items-start justify-content-center bg-secondary text-light p-3">
+			<div class="d-flex flex-column align-items-center justify-content-between w-100 p-3">
+				<h2 class="text-center">Favorite Recipes</h2>
 				<!-- Dropdown -->
-				 <div class="dropdown ms-3">
-					<button class="btn btn-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" id="dropdown" aria-expanded="false">
-						Fav's
+				 <div class="dropdown ms-3 d-flex flex-column align-items-center justify-content-between w-100 p-3">
+					<button class="btn btn-dark dropdown-toggle w-100" type="button" data-bs-toggle="dropdown" id="dropdown" aria-expanded="false">
+						Our Fav's
 					</button>
+					<!-- data-bs-target and slide to navigate to slide i want -->
 					<ul class="dropdown-menu" aria-labelledby="dropdown">
-						<li><a class="dropdown-item" href="#">Ramen Noodles</a></li>
-						<li><a class="dropdown-item" href="#">Taco</a></li>
-						<li><a class="dropdown-item" href="#">Breakfast Hot Dog</a></li>
-						<li><a class="dropdown-item" href="#">Little Tuna</a></li>
+						<li><a class="dropdown-item" href="#" data-bs-target="#fav_carousel" data-bs-slide-to="0">Ramen Noodles</a></li>
+						<li><a class="dropdown-item" href="#" data-bs-target="#fav_carousel" data-bs-slide-to="1">Taco</a></li>
+						<li><a class="dropdown-item" href="#" data-bs-target="#fav_carousel" data-bs-slide-to="2">Breakfast Hot Dog</a></li>
+						<li><a class="dropdown-item" href="#" data-bs-target="#fav_carousel" data-bs-slide-to="3">Little Tuna</a></li>
 					</ul>
 				 </div>
 			</div>
-			<div>
-			<p class="text-dark align-items-center justify-content-between p-2">Here are some of our favorites!</p>
-			<a class="nav-link align-items-center justify-content-between p-2" href="#">View Recipes Here!</a>
+			<div class="d-flex align-items-center justify-content-between w-100 p-2">
+				<img class="p-3" src="https://placehold.co/450x200" height="auto" width="100%">
+			</div>
+			<div class="d-flex flex-column align-items-center justify-content-between w-100 p-2">
+			<p class="text-dark p-3 text-center">Here are some of our favorites! asdfsf asdfdsa gf sadfhkjdsfh l fhjdsa lkjhkjfas kljhsdakf</p>
+			<p class="text-dark p-3 text-center">Or if you want you can skip straight to the recipes below.</p>
+			<a class="nav-link p-3" href="#">View Recipes Here!</a>
 			</div>
 		</aside>
 		<!-- Carousel on right -->
-		 <div class="col-9">
-			<div class="row align-items-center justify-content-center h-100">
-			  <div class="d-flex col-6 p-3 align-items-center">
-				  <img src="https://placehold.co/450x200">
-			  </div>
-			  <div class="col-6 align-items-center">
-			  <div class="p-2">
-				  <h1>Name of Dish</h1>
-			  </div>
-			  <div class="p-2">
-				  <p>Here is a description of the dish kajdfhaksjdhj aksjdhsak afjh aksdhjkashd aksjdhas</p>
-			  </div>
-			  </div>
+		 <!-- Start of Carousel -->
+		 <div class="col-9 carousel slide" id="fav_carousel">
+			<!-- Carousel Items -->
+			<div class="carousel-inner">
+				<!-- First Card -->
+				 <!-- Bootstrap has a class for img on top on the cards -->
+				<div class="carousel-item active">
+					<div class="card">
+						<img src="https://placehold.co/450x200" class="card-img-top" alt="Dish Image">
+						<div class="card-body">
+							<h5 class="card-title">Ramen Noodles</h5>
+							<p class="card-text">asdfds sdfsdgf sfdg dfg gfd gfd gdf gdfg kajdfhaksjdhj aksjdhsak afjh aksdhjkashd aksjdhas.</p>
+						</div>
+					</div>
+				</div>
+				<!-- Second Card -->
+				<div class="carousel-item">
+					<div class="card">
+						<img src="https://placehold.co/450x200" class="card-img-top" alt="Dish Image">
+						<div class="card-body">
+							<h5 class="card-title">Taco</h5>
+							<p class="card-text">sdfgdfsfgfdsg fdsgsfdg sdfgfdsg sdfgdfsgffdsg dsfgdfsg sdfg dsfg sdfg sdfgdfgsdfgdfsgf dsfgdfsgfdg</p>
+						</div>
+					</div>
+				</div>
+				<!-- Third Card -->
+				<div class="carousel-item">
+					<div class="card">
+						<img src="https://placehold.co/450x200" class="card-img-top" alt="Dish Image">
+						<div class="card-body">
+							<h5 class="card-title">Breakfast Hot Dog</h5>
+							<p class="card-text">sdfgfdsg dfsg sdfg sdfgdfsgsdf sdfgdsfgdf sdfgsdfgfds sdfgfdsgdf dfsfgfdg sdfgdfgfds sdfgdfsgsdfg</p>
+						</div>
+					</div>
+				</div>
+				<!-- Fourth Card -->
+				<div class="carousel-item">
+					<div class="card">
+						<img src="https://placehold.co/450x200" class="card-img-top" alt="Dish Image">
+						<div class="card-body">
+							<h5 class="card-title">Little Tuna</h5>
+							<p class="card-text">sdfgsdf dfsg dfsfgsdfgsdfghgdsfgsdfg sdfg dsfg sdfgdfsg sdfgdfsg sdfgdfsgfds dfsgdfsgsdfg sdfgdfgdfgsdfg</p>
+						</div>
+					</div>
+				</div>
 			</div>
+			<!-- Controls previous or next -->
+			<button class="carousel-control-prev" type="button" data-bs-target="#fav_carousel" data-bs-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Previous</span>
+			</button>
+			<button class="carousel-control-next" type="button" data-bs-target="#fav_carousel" data-bs-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Next</span>
+			</button>
 		</div>
 	</section>
+	<!-- About Me Section -->
 
 </main>
 <footer>
