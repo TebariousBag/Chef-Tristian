@@ -34,70 +34,120 @@
 	 <!-- I would have rather done this part in CSS -->
 	<div class="bg-dark text-light w-100" style="background-image: url('https://placehold.co/450x200'); background-size: cover; background-position: center; height: 250px;">
 	</div>
-
-	<!-- Carousel -->
-	<!-- Start of Carousel -->
-	<div class="col-12 d-flex align-items-center justify-content-center carousel slide" id="fav_carousel">
-		<!-- Carousel Items -->
-		<div class="carousel-inner">
-			<!-- First Card -->
-			 <!-- Bootstrap has a class for img on top on the cards -->
-			<div class="carousel-item active">
-				<div class="card">
-					<img src="https://placehold.co/450x200" class="card-img-top">
-					<div class="card-body">
-						<h5 class="card-title">Ramen Noodles</h5>
-						<p class="card-text">asdfds sdfsdgf sfdg dfg gfd gfd gdf gdfg kajdfhaksjdhj aksjdhsak afjh aksdhjkashd aksjdhas.</p>
-					</div>
-				</div>
-			</div>
-			<!-- Second Card -->
-			<div class="carousel-item">
-				<div class="card">
-					<img src="https://placehold.co/450x200" class="card-img-top">
-					<div class="card-body">
-						<h5 class="card-title">Taco</h5>
-						<p class="card-text">sdfgdfsfgfdsg fdsgsfdg sdfgfdsg sdfgdfsgffdsg dsfgdfsg sdfg dsfg sdfg sdfgdfgsdfgdfsgf dsfgdfsgfdg</p>
-					</div>
-				</div>
-			</div>
-			<!-- Third Card -->
-			<div class="carousel-item">
-				<div class="card">
-					<img src="https://placehold.co/450x200" class="card-img-top">
-					<div class="card-body">
-						<h5 class="card-title">Breakfast Hot Dog</h5>
-						<p class="card-text">sdfgfdsg dfsg sdfg sdfgdfsgsdf sdfgdsfgdf sdfgsdfgfds sdfgfdsgdf dfsfgfdg sdfgdfgfds sdfgdfsgsdfg</p>
-					</div>
-				</div>
-			</div>
-			<!-- Fourth Card -->
-			<div class="carousel-item">
-				<div class="card">
-					<img src="https://placehold.co/450x200" class="card-img-top">
-					<div class="card-body">
-						<h5 class="card-title">Little Tuna</h5>
-						<p class="card-text">sdfgsdf dfsg dfsfgsdfgsdfghgdsfgsdfg sdfg dsfg sdfgdfsg sdfgdfsg sdfgdfsgfds dfsgdfsgsdfg sdfgdfgdfgsdfg</p>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- Controls previous or next -->
-		<button class="carousel-control-prev" type="button" data-bs-target="#fav_carousel" data-bs-slide="prev">
-			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-			<span class="visually-hidden">Previous</span>
-		</button>
-		<button class="carousel-control-next" type="button" data-bs-target="#fav_carousel" data-bs-slide="next">
-			<span class="carousel-control-next-icon" aria-hidden="true"></span>
-			<span class="visually-hidden">Next</span>
-		</button>
-	</div>
 </section>
 </header>
 
-<main class="w-100">
+<main>
+	<!-- Carousel Section -->
+	<section class="bg-dark p-3">
+		<div id="recipes_carousel" class="carousel slide">
+		<div class="carousel-inner">
+			<!-- First Group of 4 Cards -->
+			 <!-- These are the starting cards -->
+			<div class="carousel-item active">
+				<div class="row">
+					<div class="col-3">
+						<div class="card">
+							<div class="card-body">
+								<h5 class="card-title">Ramen Noodles</h5>
+								<p class="card-text">asdfds sdfsdgf sfdg dfg gfd gfd gdf gdfg kajdfhaksjdhj aksjdhsak afjh aksdhjkashd aksjdhas.</p>
+								<img src="https://placehold.co/450x200" class="card-img-top">
+							</div>
+						</div>
+					</div>
+					<div class="col-3">
+						<div class="card">
+							<img src="https://placehold.co/450x200" class="card-img-top">
+							<div class="card-body">
+								<h5 class="card-title">Taco</h5>
+								<p class="card-text">sdfgdfsfgfdsg fdsgsfdg sdfgfdsg sdfgdfsgffdsg dsfgdfsg sdfg dsfg sdfg sdfgdfgsdfgdfsgf dsfgdfsgfdg</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-3">
+						<div class="card">
+							<div class="card-body">
+								<h5 class="card-title">Little Tuna</h5>
+								<p class="card-text">sdfgsdf dfsg dfsfgsdfgsdfghgdsfgsdfg sdfg dsfg sdfgdfsg sdfgdfsg sdfgdfsgfds dfsgdfsgsdfg sdfgdfgdfgsdfg</p>
+								<img src="https://placehold.co/450x200" class="card-img-top">
+							</div>
+						</div>
+					</div>
+					<div class="col-3">
+						<div class="card">
+							<img src="https://placehold.co/450x200" class="card-img-top">
+							<div class="card-body">
+								<h5 class="card-title">Pasta</h5>
+								<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		
+			<!-- Second Group of 4 Cards -->
+			 <!-- wrapped in one single carousel-item -->
+			  <!-- so it shows all 4 cards -->
+			<div class="carousel-item">
+				<div class="row">
+					<div class="col-3">
+						<div class="card">
+							<div class="card-body">
+								<h5 class="card-title">Salmon Tortilla</h5>
+								<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+								<img src="https://placehold.co/450x200" class="card-img-top">
+							</div>
+						</div>
+					</div>
+					<div class="col-3">
+						<div class="card">
+							<img src="https://placehold.co/450x200" class="card-img-top">
+							<div class="card-body">
+								<h5 class="card-title"> Dirty Diaper</h5>
+								<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-3">
+						<div class="card">
+							<div class="card-body">
+								<h5 class="card-title">Pilsner</h5>
+								<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+								<img src="https://placehold.co/450x200" class="card-img-top">
+							</div>
+						</div>
+					</div>
+					<div class="col-3">
+						<div class="card">
+							<img src="https://placehold.co/450x200" class="card-img-top">
+							<div class="card-body">
+								<h5 class="card-title">Iced Tea</h5>
+								<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			</div>
+			<!-- Controls previous or next -->
+			<button class="carousel-control-prev" type="button" data-bs-target="#recipes_carousel" data-bs-slide="prev" style="left: 10px; width: auto; padding: 0;">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Previous</span>
+			</button>
+			<button class="carousel-control-next" type="button" data-bs-target="#recipes_carousel" data-bs-slide="next" style="right: 10px; width: auto; padding: 0;">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Next</span>
+			</button>
+		</div>
+	</section>
+
+	<!-- Recipe Area -->
+	 <section>
+		
+	 </section>
 
 </main>
+
 <footer class="bg-dark text-light w-100" style="background-image: url('https://placehold.co/450x200'); background-size: cover; background-position: center; height: 350px;" id="contact">
 	<!-- Logo and Social Icons -->
 	<section class="d-flex flex-column align-items-center justify-content-center text-light p-3">
