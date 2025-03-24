@@ -32,15 +32,12 @@
     </div>
 	<!-- Hero Section -->
 	 <!-- I would have rather done this part in CSS -->
-	<div class="bg-dark text-light w-100" style="background-image: url('https://placehold.co/450x200'); background-size: cover; background-position: center; height: 550px;">
-		<div class="align-items-center justify-content-center text-center p-5">
-			<h1>Welcome to simple cooking!</h1>
-		</div>
+	<div class="bg-dark text-light w-100" style="background-image: url('/images/tristian-presenting2.webp'); background-size: cover; background-position: center; height: 550px;">
 	</div>
 	<!-- text area -->
 	<div class="d-flex justify-content-center align-items-center bg-dark p-3">
 		<div class="flex-column d-flex align-items-center justify-content-between p-3 text-light">
-		<h1>Simple Cooking with Chef Tristian</h1>
+		<h1>Welcome to Simple Cooking with Chef Tristian</h1>
 		</div>
 		<div class="flex-column d-flex align-items-center justify-content-between p-3 text-light">
 			<p class="border border-start-0 border-end-0 border-2 lh-lg">Chef Tristian emerges as a luminary in the culinary firmament, his approach to cooking embodying a profound paradox - achieving sublime complexity through deliberate simplicity. His mastery lies not in elaborate preparations or rare ingredients, but in the precise calibration of fundamental elements that elevate basic dishes to transcendent heights.</p>
@@ -51,13 +48,18 @@
 	<!-- Carousel Section, with Aside -->
 	<section class="row bg-light text-dark w-100">
 		<!-- aside on left -->
-		<aside class="d-flex flex-column col-3 align-items-start justify-content-center bg-secondary text-light p-3 border border-3 border-dark">
+		<aside class="d-flex flex-column col-12 col-md-3 align-items-start justify-content-center bg-secondary text-light p-3 border border-3 border-dark">
 			<div class="d-flex flex-column align-items-center justify-content-between w-100 p-3">
-				<h2 class="text-center text-dark fw-bold border border-start-0 border-end-0 border-2 border-dark">Favorite Recipes</h2>
+				<div class="col d-flex align-items-center justify-content-between w-100 p-2">
+					<div class="col">
+					<h4 class="text-center text-dark fw-bold">Check out some of our favorite recipes below!</h4>
+					<img class="p-3 rounded-circle border border-2 border-dark bg-light" src="/images/hotdog-skewers.webp" height="auto" width="100%">
+					</div>
+				</div>
 				<!-- Dropdown -->
-				 <div class="dropdown ms-3 d-flex flex-column align-items-center justify-content-between w-100 p-3">
+				 <div class="dropdown d-flex flex-column align-items-center justify-content-between w-100 p-3">
 					<button class="btn btn-dark dropdown-toggle w-100" type="button" data-bs-toggle="dropdown" id="dropdown" aria-expanded="false">
-						Best Of
+						Fav's
 					</button>
 					<!-- data-bs-target and slide to navigate to slide i want -->
 					 <!-- gonna change dropdown bg, reminder-->
@@ -69,27 +71,16 @@
 					</ul>
 				 </div>
 			</div>
-			<div class="col d-flex align-items-center justify-content-between w-100 p-2">
-				<div class="col">
-				<p class="text-center fw-bold">Check out some of our favorite recipes above!</p>
-				<img class="p-3 rounded-circle border border-2 border-dark bg-light" src="/images/hotdog-skewers.webp" height="auto" width="100%">
-				</div>
-			</div>
-			<div class="d-flex flex-column align-items-center justify-content-between w-100 p-2">
-			<p class="text-dark p-3 text-center fw-semibold">Chef Tristian's recipes stand as testament to the democratization of haute cuisine, demonstrating that true culinary innovation lies not in the rarity or cost of ingredients, but in the visionary application of technique and understanding of flavor dynamics.</p>
-			<p class="text-dark p-3 text-center fw-semibold">If you would like to get started cooking like Chef Tristian checkout his recipes and learn the way of the blade!</p>
-			<a class="nav-link p-3" href="recipes.html">View Recipes Here!</a>
-			</div>
 		</aside>
 		<!-- Carousel on right -->
 		 <!-- Start of Carousel -->
-		 <div class="col-9 d-flex align-items-center justify-content-center carousel slide border border-3 border-dark" id="fav_carousel">
+		 <div class="col-12 col-md-9 d-flex align-items-center justify-content-center carousel slide border border-3 border-dark" id="fav_carousel">
 			<!-- Carousel Items -->
-			<div class="carousel-inner">
+			<div class="carousel-inner p-2">
 				<!-- First Card -->
 				 <!-- Bootstrap has a class for img on top on the cards -->
 				<div class="carousel-item active">
-					<div class="card d-flex flex-column align-items-center justify-content-center">
+					<div class="card d-flex flex-column align-items-center justify-content-center bg-dark text-light">
 						<img src="/images/salmon-ramen-closeup.jpg" class="card-img-top photo-container img-fluid">
 						<div class="card-body">
 							<h5 class="card-title">Salmon Ramen Noodles</h5>
@@ -141,16 +132,13 @@
 	</section>
 	<!-- About Me Section -->
 	<section class="bg-dark text-light p-3 w-100">
-		<div class="align-items-center justify-content-center text-center p-3 mb-4">
-			<h1>About the Chef</h1>
-		</div>
 		<div class="d-flex row justify-content-center align-items-center bg-dark">
 		  <div class="col-6 align-items-center justify-content-between h-100 text-light p-3">
 			  <img class="rounded-circle img-fluid" src="https://placehold.co/450x200">
 		  </div>
 		  <div class="col-6 d-flex flex-column align-items-center justify-content-center h-100 text-light">
-			  <h2 class="text-center p-3">Inspiration</h2>
-			  <p class="text-center">Coming from ajsdh akjefdb dakjfbs dkjfh sdkjfhksjjh ksjhdf ksjdfh fkdsjfh kksdj fhkjdsjfh skdsjfh dksjfh dskfjsdhf ksdj akjsdfhdaskjf hksdjfh dksjfh dskfjhds kfjhdsfk jdsfh kdsjfhdksj fh dksjfh dskjfh kdsjfh kdsjfh ksdjfh dksjfh kdsjhf kdsjfh dksjfhdksjf hk fh kdsjfh dksjf hdksj</p>
+			  <h2 class="text-center p-3">Who is this Chef?</h2>
+			  <p class="text-center">Chef Tristian continues to push the boundaries of culinary innovation while remaining grounded in his core philosophy: that great cooking should be accessible to everyone, regardless of skill level or economic means. His kitchen serves as a laboratory for creativity, where traditional techniques meet modern sensibilities, and where every dish tells a story of transformation and possibility. Through his work, he inspires a new generation of cooks to view familiar ingredients with fresh eyes and to understand that true culinary excellence resides in simplicity, respect for ingredients, and dedication to craft.</p>
 		  </div>
 		</div>
 	</section>
