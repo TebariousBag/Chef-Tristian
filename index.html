@@ -40,57 +40,60 @@
 	<!-- text area -->
 	<div class="d-flex justify-content-center align-items-center bg-dark p-3">
 		<div class="flex-column d-flex align-items-center justify-content-between p-3 text-light">
-		<h1>Simple Cooking with Tristian</h1>
+		<h1>Simple Cooking with Chef Tristian</h1>
 		</div>
 		<div class="flex-column d-flex align-items-center justify-content-between p-3 text-light">
-			<p>Text goes here akjdfhkdjhf ksdjhf ksdhfg ksdjhfg sdjhkfjs fjksdhfg sdjhfg akjdfhkdjhf ksdjhf ksdhfg ksdjhfg sdjhkfjs fjksdhfg sdjhfg akjdfhkdjhf ksdjhf ksdhfg ksdjhfg sdjhkfjs fjksdhfg sdjhfg</p>
+			<p class="border border-start-0 border-end-0 border-2 lh-lg">Chef Tristian emerges as a luminary in the culinary firmament, his approach to cooking embodying a profound paradox - achieving sublime complexity through deliberate simplicity. His mastery lies not in elaborate preparations or rare ingredients, but in the precise calibration of fundamental elements that elevate basic dishes to transcendent heights.</p>
 		</div>
 	</div>
 </header>
-<main class="w-100">
+<main class="bg-dark">
 	<!-- Carousel Section, with Aside -->
 	<section class="row bg-light text-dark w-100">
 		<!-- aside on left -->
-		<aside class="d-flex flex-column col-3 align-items-start justify-content-center bg-secondary text-light p-3">
+		<aside class="d-flex flex-column col-3 align-items-start justify-content-center bg-secondary text-light p-3 border border-3 border-dark">
 			<div class="d-flex flex-column align-items-center justify-content-between w-100 p-3">
-				<h2 class="text-center">Favorite Recipes</h2>
+				<h2 class="text-center text-dark fw-bold border border-start-0 border-end-0 border-2 border-dark">Favorite Recipes</h2>
 				<!-- Dropdown -->
 				 <div class="dropdown ms-3 d-flex flex-column align-items-center justify-content-between w-100 p-3">
 					<button class="btn btn-dark dropdown-toggle w-100" type="button" data-bs-toggle="dropdown" id="dropdown" aria-expanded="false">
-						Our Fav's
+						Best Of
 					</button>
 					<!-- data-bs-target and slide to navigate to slide i want -->
 					 <!-- gonna change dropdown bg, reminder-->
 					<ul class="dropdown-menu w-75 bg-info" aria-labelledby="dropdown">
-						<li><a class="dropdown-item" href="#" data-bs-target="#fav_carousel" data-bs-slide-to="0">Ramen Noodles</a></li>
+						<li><a class="dropdown-item" href="#" data-bs-target="#fav_carousel" data-bs-slide-to="0">Salmon Ramen Noodles</a></li>
 						<li><a class="dropdown-item" href="#" data-bs-target="#fav_carousel" data-bs-slide-to="1">Taco</a></li>
 						<li><a class="dropdown-item" href="#" data-bs-target="#fav_carousel" data-bs-slide-to="2">Breakfast Hot Dog</a></li>
 						<li><a class="dropdown-item" href="#" data-bs-target="#fav_carousel" data-bs-slide-to="3">Little Tuna</a></li>
 					</ul>
 				 </div>
 			</div>
-			<div class="d-flex align-items-center justify-content-between w-100 p-2">
-				<img class="p-3" src="https://placehold.co/450x200" height="auto" width="100%">
+			<div class="col d-flex align-items-center justify-content-between w-100 p-2">
+				<div class="col">
+				<p class="text-center fw-bold">Check out some of our favorite recipes above!</p>
+				<img class="p-3 rounded-circle border border-2 border-dark bg-light" src="/images/hotdog-skewers.webp" height="auto" width="100%">
+				</div>
 			</div>
 			<div class="d-flex flex-column align-items-center justify-content-between w-100 p-2">
-			<p class="text-dark p-3 text-center">Here are some of our favorites! asdfsf asdfdsa gf sadfhkjdsfh l fhjdsa lkjhkjfas kljhsdakf</p>
-			<p class="text-dark p-3 text-center">Or if you want you can skip straight to the recipes below.</p>
+			<p class="text-dark p-3 text-center fw-semibold">Chef Tristian's recipes stand as testament to the democratization of haute cuisine, demonstrating that true culinary innovation lies not in the rarity or cost of ingredients, but in the visionary application of technique and understanding of flavor dynamics.</p>
+			<p class="text-dark p-3 text-center fw-semibold">If you would like to get started cooking like Chef Tristian checkout his recipes and learn the way of the blade!</p>
 			<a class="nav-link p-3" href="recipes.html">View Recipes Here!</a>
 			</div>
 		</aside>
 		<!-- Carousel on right -->
 		 <!-- Start of Carousel -->
-		 <div class="col-9 d-flex align-items-center justify-content-center carousel slide" id="fav_carousel">
+		 <div class="col-9 d-flex align-items-center justify-content-center carousel slide border border-3 border-dark" id="fav_carousel">
 			<!-- Carousel Items -->
 			<div class="carousel-inner">
 				<!-- First Card -->
 				 <!-- Bootstrap has a class for img on top on the cards -->
 				<div class="carousel-item active">
-					<div class="card">
-						<img src="https://placehold.co/450x200" class="card-img-top">
+					<div class="card d-flex flex-column align-items-center justify-content-center">
+						<img src="/images/salmon-ramen-closeup.jpg" class="card-img-top photo-container img-fluid">
 						<div class="card-body">
-							<h5 class="card-title">Ramen Noodles</h5>
-							<p class="card-text">asdfds sdfsdgf sfdg dfg gfd gfd gdf gdfg kajdfhaksjdhj aksjdhsak afjh aksdhjkashd aksjdhas.</p>
+							<h5 class="card-title">Salmon Ramen Noodles</h5>
+							<p class="card-text photo-container">This dish stands as a monument to modern culinary creativity – a masterful synthesis of convenience, sophistication, and pure gastronomic pleasure. It serves as living proof that true culinary artistry lies not in the cost or rarity of ingredients, but in the vision and skill of the chef who transforms them into something extraordinary. Each bite tells a story of innovation, practicality, and the unwavering pursuit of deliciousness.</p>
 						</div>
 					</div>
 				</div>
