@@ -56,79 +56,81 @@
 </header>
 
 <main>
-	<!-- Carousel Section -->
-	 <div class="bg-dark text-light text-center p-3">
-		<h4>Scroll through the recipes below!</h4>
-	 </div>
-	<section class="bg-dark p-3">
-		<div id="recipes_carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
-		<div class="carousel-inner">
-			<!-- First Carousel Item -->
-			 <!-- These are the starting cards -->
-			<div class="carousel-item active">
-				<div class="row">
-					<!-- changing from col-3 to make responsive -->
-					<div class="col-12 col-md-6 col-lg-3">
-						<div class="card">
-							<div class="card-body bg-dark text-light">
-								<a class="nav-link" href="#ramen_noodles"><h5 class="card-title">Salmon Ramen Noodles</h5>
-								<p class="card-text">Each bite combines tender salmon, springy noodles, and savory soy sauce in perfect harmony, enhanced by the subtle richness of melted butter. I drain all the water to make sure the noodles are nice and sticky. Dinner for two for about $3. This is THE perfect dish for that special someone you love!<br><br></p>
-							</div>
-							<img src="/images/salmon-ramen-twoplates.webp" class="card-img-top photo-container"></a>
-						</div>
-					</div>
-					<div class="col-12 col-md-6 col-lg-3">
-						<div class="card">
-							<div class="card-body bg-dark text-light">
-								<a class="nav-link" href="#mashed_potato_sandwich">
-							<img src="/images/salmon-sandwich-cuttingboard.jpg" class="card-img-top photo-container">
-							<div class="card-body">
-								<h5 class="card-title">Mashed Potato Salmon Sandwich</h5>
-								<p class="card-text">Perfectly pan-seared salmon nestled between 2 slices of recently purchased Hawaiian bread, toasted to perfection, tied together with creamy mashed potatoes, and a drizzle of soy sauce - a surprisingly elegant sandwich that turns simple ingredients into something special.</p></a>
-							</div>
-							</div>
-						</div>
-					</div>
+<!-- Carousel Section -->
+<div class="bg-dark text-light text-center p-3">
+    <h4>Scroll through the recipes below!</h4>
+</div>
 
-					<!-- Second Carousel Item -->
-					<div class="carousel-item active">
-						<div class="row">
-							<!-- changing from col-3 to make responsive -->
-							<div class="col-12 col-md-6 col-lg-3">
-								<div class="card">
-									<div class="card-body bg-dark text-light">
-										<a class="nav-link" href="#ramen_noodles"><h5 class="card-title">Salmon Ramen Noodles</h5>
-										<p class="card-text">Each bite combines tender salmon, springy noodles, and savory soy sauce in perfect harmony, enhanced by the subtle richness of melted butter. I drain all the water to make sure the noodles are nice and sticky. Dinner for two for about $3. This is THE perfect dish for that special someone you love!<br><br></p>
-									</div>
-									<img src="/images/salmon-ramen-twoplates.webp" class="card-img-top photo-container"></a>
-								</div>
-							</div>
-							<div class="col-12 col-md-6 col-lg-3">
-								<div class="card">
-									<div class="card-body bg-dark text-light">
-										<a class="nav-link" href="#mashed_potato_sandwich">
-									<img src="/images/salmon-sandwich-cuttingboard.jpg" class="card-img-top photo-container">
-									<div class="card-body">
-										<h5 class="card-title">Mashed Potato Salmon Sandwich</h5>
-										<p class="card-text">Perfectly pan-seared salmon nestled between 2 slices of recently purchased Hawaiian bread, toasted to perfection, tied together with creamy mashed potatoes, and a drizzle of soy sauce - a surprisingly elegant sandwich that turns simple ingredients into something special.</p></a>
-									</div>
-									</div>
-								</div>
-							</div>
-				</div>
-			</div>
-			</div>
-			<!-- Controls previous or next -->
-			<button class="carousel-control-prev" type="button" data-bs-target="#recipes_carousel" data-bs-slide="prev" style="left: 10px; width: auto; padding: 0;">
-				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-				<span class="visually-hidden">Previous</span>
-			</button>
-			<button class="carousel-control-next" type="button" data-bs-target="#recipes_carousel" data-bs-slide="next" style="right: 10px; width: auto; padding: 0;">
-				<span class="carousel-control-next-icon" aria-hidden="true"></span>
-				<span class="visually-hidden">Next</span>
-			</button>
-		</div>
-	</section>
+<!-- Carousel -->
+<section class="bg-dark p-3">
+    <div id="recipes_carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+        <div class="carousel-inner">
+
+            <!-- First Slide -->
+            <div class="carousel-item active">
+                <div class="row">
+					<!-- This one stays the same way i was trying-->
+                    <div class="col-12 col-md-6 col-lg-3 d-flex">
+                        <div class="card w-100">
+                            <div class="card-body bg-dark text-light">
+                                <a class="nav-link" href="#ramen_noodles">
+                                    <h5 class="card-title">Salmon Ramen Noodles</h5>
+                                    <p class="card-text">Each bite combines tender salmon, springy noodles, and savory soy sauce.</p>
+                                </a>
+                            </div>
+                            <img src="/images/salmon-ramen-twoplates.webp" class="card-img-top">
+                        </div>
+                    </div>
+					<!-- display none, d-flex, only visible medium and up-->
+                    <div class="col-12 col-md-6 col-lg-3 d-flex d-none d-md-flex">
+                        <div class="card w-100">
+                            <div class="card-body bg-dark text-light">
+                                <a class="nav-link" href="#mashed_potato_sandwich">
+                                    <h5 class="card-title">Mashed Potato Salmon Sandwich</h5>
+                                    <p class="card-text">A surprisingly elegant sandwich that turns simple ingredients into something special.</p>
+                                </a>
+                            </div>
+                            <img src="/images/salmon-sandwich-cuttingboard.jpg" class="card-img-top">
+                        </div>
+                    </div>
+					<!-- display only at large, needed d-none and flex for it to work -->
+                    <div class="col-12 col-md-6 col-lg-3 d-flex d-none d-lg-flex">
+                        <div class="card w-100">
+                            <div class="card-body">
+                                <h5 class="card-title">Little Tuna</h5>
+                                <p class="card-text">A mystery dish with surprising flavors.</p>
+                            </div>
+                            <img src="https://placehold.co/450x200" class="card-img-top">
+                        </div>
+                    </div>
+					<!-- display only at large -->
+                    <div class="col-12 col-md-6 col-lg-3 d-flex d-none d-lg-flex">
+                        <div class="card w-100">
+                            <img src="https://placehold.co/450x200" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Pasta</h5>
+                                <p class="card-text">A delicious meal made with love.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+			<!-- Space if I have time for more cards -->
+
+		<!-- closing div for Carousel-->
+        </div>
+
+        <!-- Controls previous or next -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#recipes_carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#recipes_carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</section>
 
 <!-- just so I can find this area quickly -->	
 	<!-- Recipe Area -->
