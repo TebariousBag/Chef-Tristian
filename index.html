@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Simple Cooking with Tristian</title>
+	<title>Simple Cooking with Chef Tristian</title>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 	<link href="styles.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
@@ -18,7 +18,8 @@
         <div class="row align-items-center p-3">
             <!-- Logo -->
             <div class="col-6 d-flex align-items-center">
-                <img class="img-fluid" src="https://placehold.co/150x50">
+                <img class="img-fluid social-icons" src="/images/logo-white.webp">
+				<p class="fs-5 mx-3 nav-link text-light text-center">Chef Tristian</p>
             </div>
             <!-- Nav -->
             <div class="col-6 text-light">
@@ -31,7 +32,7 @@
         </div>
     </div>
 	<div class="bg-dark text-light text-center p-3">
-		<h1>Elevated Cooking - Innovation - Cheffing</h1>
+		<h4>Here to Teach You - Elevated Cooking - Innovation - Chef-ing</h4>
 	</div>
 	<!-- Hero Section -->
 	 <!-- I would have rather done this part in CSS -->
@@ -55,7 +56,7 @@
 			<div class="d-flex flex-column align-items-center justify-content-between w-100 p-3">
 				<div class="col d-flex align-items-center justify-content-between w-100 p-2">
 					<div class="col">
-					<h4 class="text-center text-dark fw-bold border border-3 border-dark border-start-0 border-end-0 p-3 mb-5">Check out some of my favorite recipes!</h4>
+					<h4 class="text-center text-dark fw-bold border border-4 border-dark border-start-0 border-end-0 p-3 mb-5">Check out some of my favorite recipes!</h4>
 					<img class="p-3 rounded-circle border border-2 border-dark bg-light" style="box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);" src="/images/hotdog-skewers.webp" height="auto" width="100%">
 					</div>
 				</div>
@@ -66,11 +67,11 @@
 					</button>
 					<!-- data-bs-target and slide to navigate to slide i want -->
 					 <!-- gonna change dropdown bg, reminder-->
-					<ul class="dropdown-menu w-75 bg-info" aria-labelledby="dropdown">
-						<li><a class="dropdown-item" href="#" data-bs-target="#fav_carousel" data-bs-slide-to="0">Salmon Ramen Noodles</a></li>
-						<li><a class="dropdown-item" href="#" data-bs-target="#fav_carousel" data-bs-slide-to="1">Taco</a></li>
-						<li><a class="dropdown-item" href="#" data-bs-target="#fav_carousel" data-bs-slide-to="2">Breakfast Hot Dog</a></li>
-						<li><a class="dropdown-item" href="#" data-bs-target="#fav_carousel" data-bs-slide-to="3">Little Tuna</a></li>
+					<ul class="dropdown-menu w-75 bg-dark border border-2 border-light" aria-labelledby="dropdown">
+						<li><a class="dropdown-item text-secondary" href="#" data-bs-target="#fav_carousel" data-bs-slide-to="0">Salmon Ramen Noodles</a></li>
+						<li><a class="dropdown-item text-secondary" href="#" data-bs-target="#fav_carousel" data-bs-slide-to="1">Mashed Potato Salmon Sandwich</a></li>
+						<li><a class="dropdown-item text-secondary" href="#" data-bs-target="#fav_carousel" data-bs-slide-to="2">Breakfast Hot Dog</a></li>
+						<li><a class="dropdown-item text-secondary" href="#" data-bs-target="#fav_carousel" data-bs-slide-to="3">Little Tuna</a></li>
 					</ul>
 				 </div>
 			</div>
@@ -84,20 +85,22 @@
 				 <!-- Bootstrap has a class for img on top on the cards -->
 				<div class="carousel-item active">
 					<div class="card d-flex flex-column align-items-center justify-content-center bg-dark text-light">
-						<img src="/images/salmon-ramen-closeup.jpg" class="card-img-top photo-container img-fluid">
+						<img src="/images/salmon-ramen-twoplates.webp" class="card-img-top photo-container img-fluid p-3">
 						<div class="card-body">
-							<h5 class="card-title fw-bold">Salmon Ramen Noodles</h5>
-							<p class="card-text photo-container">What makes this creation particularly remarkable is its successful marriage of convenience and sophistication. The strategic deployment of instant ramen noodles serves as a testament to the democratization of fine dining, proving that exceptional cuisine knows no bounds of ingredient origin. The salmon, elevated by its butter bath, transforms from a simple protein into a luxurious centerpiece, while the soy sauce ties everything together with its deep, resonant flavor profile.</p>
+							<h5 class="card-title fw-bold text-center">Salmon Ramen Noodles</h5>
+							<p class="card-text text-center">Each bite combines tender salmon, springy noodles, and savory soy sauce in perfect harmony, enhanced by the subtle richness of melted butter. I drain all the water to make sure the noodles are nice and sticky. Dinner for two for about $3. This is THE perfect dish for that special someone you love!<br><br></p>
 						</div>
 					</div>
 				</div>
 				<!-- Second Card -->
 				<div class="carousel-item">
-					<div class="card">
-						<img src="https://placehold.co/450x200" class="card-img-top">
+					<div class="card d-flex flex-column align-items-center justify-content-center bg-dark text-light">
 						<div class="card-body">
-							<h5 class="card-title">Taco</h5>
-							<p class="card-text">sdfgdfsfgfdsg fdsgsfdg sdfgfdsg sdfgdfsgffdsg dsfgdfsg sdfg dsfg sdfg sdfgdfgsdfgdfsgf dsfgdfsgfdg</p>
+						<img src="/images/salmon-sandwich-cuttingboard.jpg" class="card-img-top photo-container img-fluid mx-auto">
+						<div class="card-body">
+							<h5 class="card-title text-center">Mashed Potato Salmon Sandwich</h5>
+							<p class="card-text text-center">Perfectly pan-seared salmon nestled between 2 slices of recently purchased Hawaiian bread, toasted to perfection, tied together with creamy mashed potatoes, and a drizzle of soy sauce - a surprisingly elegant sandwich that turns simple ingredients into something special.</p>
+						</div>
 						</div>
 					</div>
 				</div>
@@ -146,31 +149,33 @@
 		</div>
 	</section>
 </main>
-<footer class="bg-dark text-light w-100" style="background-image: url('https://placehold.co/450x200'); background-size: cover; background-position: center; height: 350px;" id="contact">
+<footer class="bg-dark text-light w-100" id="contact">
 	<!-- Logo and Social Icons -->
+	 <div style="background-image: url('/images/noodles-boiling.jpg'); background-size: cover; background-position: center; height: 350px;">
 	<section class="d-flex flex-column align-items-center justify-content-center text-light p-3">
-		<div>
-			<img class="img-fluid p-3" src="https://placehold.co/450x200">
+		<div class="d-flex flex-column align-items-center justify-content-center mt-5">
+			<img class="img-fluid p-3 logo" src="/images/logo-black.webp">
 			<div class="d-flex row p-3">
-				<a class="col mx-2"><img class="social-icons" src="/images/facebook.webp"></a>
-				<a class="col mx-2"><img class="social-icons" src="/images/instagram.webp"></a>
-				<a class="col mx-2"><img class="social-icons" src="/images/linkedin.webp"></a>
-				<a class="col mx-2"><img class="social-icons" src="/images/pinterest.webp"></a>
-				<a class="col mx-2"><img class="social-icons" src="/images/youtube.webp"></a>
+				<a class="col mx-2" href="#"><img class="social-icons" src="/images/facebook.webp"></a>
+				<a class="col mx-2" href="#"><img class="social-icons" src="/images/instagram.webp"></a>
+				<a class="col mx-2" href="#"><img class="social-icons" src="/images/linkedin.webp"></a>
+				<a class="col mx-2" href="#"><img class="social-icons" src="/images/pinterest.webp"></a>
+				<a class="col mx-2" href="#"><img class="social-icons" src="/images/youtube.webp"></a>
 			</div>
 		</div>
 	</section>
+	</div>
 	<!-- very bottom, copyright and email -->
 	<div class="container-fluid">
-	<div class="row d-flex align-items-center bg-dark p-3" style="height: 100px;">
-		<div class="col p-3 d-flex align-items-center justify-content-start">
-			<p class="text-secondary mb-0">© 2025 https://github.com/TebariousBag All rights reserved.</p>
+		<div class="row d-flex align-items-center bg-black p-3">
+			<div class="col p-3 d-flex align-items-center justify-content-start">
+				<p class="text-secondary mb-0">© 2025 https://github.com/TebariousBag All rights reserved.</p>
+			</div>
+			<div class="col p-3 d-flex align-items-center justify-content-end">
+				<p class="mb-0">email.adsfdsdf.@gmail.com</p>
+			</div>
 		</div>
-		<div class="col p-3 d-flex align-items-center justify-content-end">
-			<p class="mb-0">email.adsfdsdf.@gmail.com</p>
 		</div>
-	</div>
-	</div>
 
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

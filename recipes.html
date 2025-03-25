@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Simple Cooking with Tristian</title>
+	<title>Simple Cooking with Chef Tristian</title>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 	<link href="styles.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
@@ -18,7 +18,8 @@
         <div class="row align-items-center p-3">
             <!-- Logo -->
             <div class="col-6 d-flex align-items-center">
-                <img class="img-fluid" src="https://placehold.co/150x50">
+                <img class="img-fluid social-icons" src="/images/logo-white.webp">
+				<p class="fs-5 mx-3 nav-link text-light text-center">Chef Tristian</p>
             </div>
             <!-- Nav -->
             <div class="col-6 text-light">
@@ -31,7 +32,7 @@
         </div>
     </div>
 	<div class="bg-dark text-light text-center p-3">
-		<h1>Recipes you can make at Home!</h1>
+		<h3>Recipes you can make at home!</h3>
 	</div>
 	<!-- Hero Section -->
 	 <!-- I would have rather done this part in CSS -->
@@ -43,10 +44,10 @@
 <main>
 	<!-- Carousel Section -->
 	 <div class="bg-dark text-light text-center p-3">
-		<h1>Scroll through the recipes below!</h1>
+		<h4>Scroll through the recipes below!</h4>
 	 </div>
 	<section class="bg-dark p-3">
-		<div id="recipes_carousel" class="carousel slide">
+		<div id="recipes_carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
 		<div class="carousel-inner">
 			<!-- First Group of 4 Cards -->
 			 <!-- These are the starting cards -->
@@ -55,18 +56,21 @@
 					<div class="col-3">
 						<div class="card">
 							<div class="card-body bg-dark text-light">
-								<a class="nav-link" href="#ramen_noodles"><h5 class="card-title">Salmon Ramen Noodles</h5></a>
-								<p class="card-text">Each bite combines tender salmon, springy noodles, and savory soy sauce in perfect harmony, enhanced by the subtle richness of melted butter.</p>
+								<a class="nav-link" href="#ramen_noodles"><h5 class="card-title">Salmon Ramen Noodles</h5>
+								<p class="card-text">Each bite combines tender salmon, springy noodles, and savory soy sauce in perfect harmony, enhanced by the subtle richness of melted butter. I drain all the water to make sure the noodles are nice and sticky. Dinner for two for about $3. This is THE perfect dish for that special someone you love!<br><br></p>
 							</div>
-							<img src="/images/salmon-ramen-closeup-twoplates.webp" class="card-img-top photo-container">
+							<img src="/images/salmon-ramen-twoplates.webp" class="card-img-top photo-container"></a>
 						</div>
 					</div>
 					<div class="col-3">
 						<div class="card">
-							<img src="https://placehold.co/450x200" class="card-img-top">
+							<div class="card-body bg-dark text-light">
+								<a class="nav-link" href="#mashed_potato_sandwich">
+							<img src="/images/salmon-sandwich-cuttingboard.jpg" class="card-img-top photo-container">
 							<div class="card-body">
-								<h5 class="card-title">Taco</h5>
-								<p class="card-text">sdfgdfsfgfdsg fdsgsfdg sdfgfdsg sdfgdfsgffdsg dsfgdfsg sdfg dsfg sdfg sdfgdfgsdfgdfsgf dsfgdfsgfdg</p>
+								<h5 class="card-title">Mashed Potato Salmon Sandwich</h5>
+								<p class="card-text">Perfectly pan-seared salmon nestled between 2 slices of recently purchased Hawaiian bread, toasted to perfection, tied together with creamy mashed potatoes, and a drizzle of soy sauce - a surprisingly elegant sandwich that turns simple ingredients into something special.</p></a>
+							</div>
 							</div>
 						</div>
 					</div>
@@ -98,19 +102,21 @@
 				<div class="row">
 					<div class="col-3">
 						<div class="card">
-							<div class="card-body">
-								<h5 class="card-title">Salmon Tortilla</h5>
-								<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+							<div class="card-body bg-dark text-light">
+								<a class="nav-link" href="#ramen_noodles"><h5 class="card-title">Salmon Ramen Noodles</h5></a>
+								<p class="card-text">Each bite combines tender salmon, springy noodles, and savory soy sauce in perfect harmony, enhanced by the subtle richness of melted butter.</p>
 							</div>
-							<img src="https://placehold.co/450x200" class="card-img-top">
+							<img src="/images/salmon-ramen-twoplates.webp" class="card-img-top photo-container">
 						</div>
 					</div>
 					<div class="col-3">
 						<div class="card">
-							<img src="https://placehold.co/450x200" class="card-img-top">
+							<div class="card-body bg-dark text-light">
+							<img src="/images/salmon-sandwich-cuttingboard.jpg" class="card-img-top">
 							<div class="card-body">
-								<h5 class="card-title"> Dirty Diaper</h5>
-								<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+								<h5 class="card-title">Mashed Potato Salmon Sandwich</h5>
+								<p class="card-text">Perfectly pan-seared salmon nestled between 2 slices of recently purchased Hawaiian bread, toasted to perfection, tied together with creamy mashed potatoes, and a drizzle of soy sauce - a surprisingly elegant sandwich that turns simple ingredients into something special.</p>
+							</div>
 							</div>
 						</div>
 					</div>
@@ -149,6 +155,7 @@
 
 <!-- just so I can find this area quickly -->	
 	<!-- Recipe Area -->
+	 <!-- Salmon Ramen -->
 	 <section>
 		<div class="row d-flex align-items-center justify-content-center text-center p-3 mt-3 mb-3" id="ramen_noodles">
 			<img class="img-fluid p-3 photo-container rounded-circle border border-2 border-dark bg-light" src="/images/salmon-ramen-closeup.jpg">
@@ -164,7 +171,7 @@
 		 </div>
 		 <div class="row d-flex align-items-center justify-content-center text-center p-3 bg-dark text-light">
 			<img class="img-fluid p-3 col-12 col-md-6 order-2 order-md-1 photo-container rounded-circle border border-2 border-dark bg-light" 
-				 src="/images/salmon-ramen-twoplates.webp" alt="Salmon Ramen">
+				 src="/images/salmon-ramen-closeup-twoplates.webp" alt="Salmon Ramen">
 			<div class="col-12 col-md-6 order-1 order-md-2">
 			  <h1>Ramen Gets Fancy Pants!</h1>
 			  <p>This dish presents itself as a masterfully composed symphony of textures and temperatures, beginning with the foundation of perfectly cooked ramen noodles. These slender strands, crafted through advanced dehydration technology, rehydrate with remarkable consistency, providing a satisfying chew that serves as the perfect canvas for your culinary artistry. Atop this carbohydrate foundation rests the pièce de résistance – succulent salmon fillets, preserved in their convenient pouch packaging. This marvel of modern food science delivers pristine fish protein with minimal preparation, its delicate flesh maintaining moisture and tenderness throughout the cooking process. The pouch format, far from being merely utilitarian, serves as a controlled environment that enhances flavor penetration while ensuring consistent doneness.</p>
@@ -186,45 +193,111 @@
 		 </div>
 		 <div class="row d-flex align-items-center justify-content-center text-center p-3 bg-dark text-light">
 			<div class="col">
-				<h1>Pro Tips</h1>
+				<h1>Pro Tip</h1>
 				<p>* After draining the water return the pot to the stove. Even though the burners are off it is still warm. You can add your butter, seasonings, soy sauce and salmon here and it will blend together easier. Plus it will help the smell permeate through your kitchen!</p>
-				<p>* Make sure you set a timer for your noodles. These things are delicate, you wouldn't want to ruin your date night dinner with under or over cooked noodles!</p>
 				</div>
-				<img class="img-fluid p-3 col photo-container" src="/images/salmon-ramen-salmon.webp">
+				<img class="img-fluid p-3 col photo-container rounded-circle border border-2 border-dark bg-light" src="/images/salmon-ramen-salmon.webp">
 			 </div>
+			 <div class="row d-flex align-items-center justify-content-center text-center p-3 bg-light text-dark">
+				<img class="img-fluid p-3 col photo-container rounded-circle border border-2 border-dark bg-light" src="/images/noodles-boiling.jpg">
+				<div class="col">
+					<h1>Pro Tip</h1>
+					<p>* Make sure you set a timer for your noodles. These things are delicate, you wouldn't want to ruin your date night dinner with under or over cooked noodles!</p>
+					</div>
+				 </div>
 		 <!-- actual recipe, just an image card -->
 		  <div class="col d-flex align-items-center justify-content-center text-center p-3">
 			<img class="img-fluid p-3 col-12 photo-container" src="/images/salmon-ramen-recipe.png">
 		  </div>
 	 </section>
+	 <div class="bg-dark text-light text-center p-3">
+		<h4>More Delicious Recipes Ahead!</h4>
+	 </div>
+<!-- Mashed Potato Salmon Sandwich -->
+	 <section>
+		<div class="row d-flex align-items-center justify-content-center text-center p-3 mt-3 mb-3" id="mashed_potato_sandwich">
+			<img class="img-fluid p-3 photo-container rounded-circle border border-2 border-dark bg-light" src="/images/salmon-sandwich-closeup.jpg">
+		</div>
+		<div class="bg-dark text-light p-3">
+		<h1 class="text-center">Mashed Potato Salmon Sandwich</h1>
+		<!-- style to contain the max-width of p -->
+		<p class="text-center" style="max-width: 600px; margin: 0 auto;">At its foundation lies a slice of a recently purchased Hawaiian bread loaf from the local Dollar General, carefully selected for its structural integrity and textural contrast. Two meticulously placed slices form the framework of this gastronomic skyscraper, each piece playing a vital role in the overall composition. The bottom slice serves as the foundational anchor, while its counterpart crowns this masterpiece, creating a perfectly balanced sandwich architecture that would make even the most seasoned engineers proud.</p>
+		</div>
+		<!-- ad break -->
+		 <div class="row d-flex align-items-center justify-content-center text-center p-3">
+			<img class="img-fluid p-3 col photo-container" src="/images/turblo.webp">
+		 </div>
+		 <div class="row d-flex align-items-center justify-content-center text-center p-3 bg-dark text-light">
+			<img class="img-fluid p-3 col-12 col-md-6 order-2 order-md-1 photo-container rounded-circle border border-2 border-dark bg-light" 
+				 src="/images/salmon-sandwich-uncut.jpg" alt="Salmon Ramen">
+			<div class="col-12 col-md-6 order-1 order-md-2">
+			  <h1>Sandwich Revolution: Where Sea Meets Bread!</h1>
+			  <p>The Pan-Seared Salmon Sandwich Extravaganza stands as a monument to culinary innovation, a testament to human creativity, and a celebration of the endless possibilities available to us in the kitchen. Each bite tells a story of transformation - from simple ingredients to a sophisticated dining experience that would make even the most discerning gourmands pause in admiration. It is, quite simply, a masterpiece that redefines the very concept of dinner itself.</p>
+			</div>
+		  </div>
+		 <div class="row d-flex align-items-center justify-content-center text-center p-3">
+			<img class="col-6 img-fluid p-3 photo-container" src="/images/flushmaster.webp">
+			<img class="col-6 img-fluid p-3 photo-container" src="/images/cereal.webp">
+		 </div>
+		 <div class="row d-flex align-items-center justify-content-center text-center p-3 bg-dark text-light">
+			<div class="col">
+			<h1>The Catch of the Day Just Got Handheld!</h1>
+			<p>Between these architectural layers, two packs of instant mashed potatoes serve as nature's mortar, binding the flavors and textures together in perfect harmony. These creamy spuds, elevated far beyond their humble origins, provide a luxurious textural contrast that bridges the gap between the crispy bread and the succulent fish. Their subtle potato essence enhances the dish without overpowering its noble components, demonstrating the perfect balance of supporting actor and star performer.</p>
+			</div>
+			<img class="img-fluid p-3 col photo-container rounded-circle border border-2 border-dark bg-light" src="/images/salmon-sandwich-uncut-messy.jpg">
+		 </div>
+		 <div class="row d-flex align-items-center justify-content-center text-center p-3">
+			<img class="img-fluid p-3 col photo-container" src="/images/stinkshield.webp">
+		 </div>
+		 <div class="row d-flex align-items-center justify-content-center text-center p-3 bg-dark text-light">
+			<div class="col">
+				<h1>Pro Tip</h1>
+				<p>* If you are trying to cut back on the starch, you can just ditch the bread and instead put the salmon on a bed of mashed potatoes!</p>
+				</div>
+				<img class="img-fluid p-3 col photo-container rounded-circle border border-2 border-dark bg-light" src="/images/salmon-sandwich-bowl.jpg">
+			 </div>
+			 <div class="row d-flex align-items-center justify-content-center text-center p-3 bg-light text-dark">
+				<img class="img-fluid p-3 col photo-container rounded-circle border border-2 border-dark bg-light" src="/images/mashed-potatoes.jpg">
+				<div class="col">
+					<h1>Pro Tip</h1>
+					<p>* You don't even need to waste butter on these mashed potatoes if you get the Buttery Homestyle kind!</p>
+					</div>
+				 </div>
+		 <!-- actual recipe, just an image card -->
+		  <div class="col d-flex align-items-center justify-content-center text-center p-3">
+			<img class="img-fluid p-3 col-12 photo-container" src="/images/mashed-potato-salmon-sandwich-recipe.png">
+		  </div>
+	 </section>
 
 </main>
 
-<footer class="bg-dark text-light w-100" style="background-image: url('https://placehold.co/450x200'); background-size: cover; background-position: center; height: 350px;" id="contact">
+<footer class="bg-dark text-light w-100" id="contact">
 	<!-- Logo and Social Icons -->
+	 <div style="background-image: url('/images/noodles-boiling.jpg'); background-size: cover; background-position: center; height: 350px;">
 	<section class="d-flex flex-column align-items-center justify-content-center text-light p-3">
-		<div>
-			<img class="img-fluid p-3" src="https://placehold.co/450x200">
+		<div class="d-flex flex-column align-items-center justify-content-center mt-5">
+			<img class="img-fluid p-3 logo" src="/images/logo-black.webp">
 			<div class="d-flex row p-3">
-				<a class="col mx-2"><img class="social-icons" src="/images/facebook.webp"></a>
-				<a class="col mx-2"><img class="social-icons" src="/images/instagram.webp"></a>
-				<a class="col mx-2"><img class="social-icons" src="/images/linkedin.webp"></a>
-				<a class="col mx-2"><img class="social-icons" src="/images/pinterest.webp"></a>
-				<a class="col mx-2"><img class="social-icons" src="/images/youtube.webp"></a>
+				<a class="col mx-2" href="#"><img class="social-icons" src="/images/facebook.webp"></a>
+				<a class="col mx-2" href="#"><img class="social-icons" src="/images/instagram.webp"></a>
+				<a class="col mx-2" href="#"><img class="social-icons" src="/images/linkedin.webp"></a>
+				<a class="col mx-2" href="#"><img class="social-icons" src="/images/pinterest.webp"></a>
+				<a class="col mx-2" href="#"><img class="social-icons" src="/images/youtube.webp"></a>
 			</div>
 		</div>
 	</section>
+	</div>
 	<!-- very bottom, copyright and email -->
 	<div class="container-fluid">
-	<div class="row d-flex align-items-center bg-dark p-3" style="height: 100px;">
-		<div class="col p-3 d-flex align-items-center justify-content-start">
-			<p class="text-secondary mb-0">© 2025 https://github.com/TebariousBag All rights reserved.</p>
+		<div class="row d-flex align-items-center bg-black p-3">
+			<div class="col p-3 d-flex align-items-center justify-content-start">
+				<p class="text-secondary mb-0">© 2025 https://github.com/TebariousBag All rights reserved.</p>
+			</div>
+			<div class="col p-3 d-flex align-items-center justify-content-end">
+				<p class="mb-0">email.adsfdsdf.@gmail.com</p>
+			</div>
 		</div>
-		<div class="col p-3 d-flex align-items-center justify-content-end">
-			<p class="mb-0">email.adsfdsdf.@gmail.com</p>
 		</div>
-	</div>
-	</div>
 
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
