@@ -12,25 +12,39 @@
 </head>
 <body class="w-100 p-0 m-0">
 <header class="w-100">
-	<!-- Menu -->
-	 <!-- Trying Container Fluid-->
-	<div class="container-fluid bg-black">
-        <div class="row align-items-center p-3">
-            <!-- Logo -->
-            <div class="col-6 d-flex align-items-center">
-                <img class="img-fluid social-icons" src="/images/logo-white.webp">
-				<p class="fs-5 mx-3 nav-link text-light text-center">Chef Tristian</p>
-            </div>
-            <!-- Nav -->
-            <div class="col-6 text-light">
-                <nav class="d-flex justify-content-end">
-                    <a class="fs-5 mx-3 nav-link" href="index.html">Home</a>
-                    <a class="fs-5 mx-3 nav-link" href="recipes.html">Recipes</a>
-                    <a class="fs-5 mx-3 nav-link" href="#contact">Contact</a>
-                </nav>
-            </div>
-        </div>
-    </div>
+<!-- Navbar -->
+ <!-- Nav with Hamburger -->
+ <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+	<div class="container-fluid">
+		<!-- Logo & Brand Name -->
+		<a class="navbar-brand d-flex align-items-center" href="#">
+			<img class="img-fluid social-icons" src="/images/logo-white.webp" width="40">
+			<h2 class="fs-5 mx-3 text-light mb-0">Chef Tristian</h2>
+		</a>
+
+		<!-- the button -->
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#Nav" aria-controls="Nav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<!-- collapse and nav links -->
+		<div class="collapse navbar-collapse text-center" id="Nav">
+			<!-- making sure link are at end, but center when open -->
+			<ul class="navbar-nav justify-content-end w-100">
+				<li class="nav-item">
+					<a class="nav-link fs-5 mx-3" href="index.html">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link fs-5 mx-3" href="recipes.html">Recipes</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link fs-5 mx-3" href="#contact">Contact</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
+
 	<div class="bg-dark text-light text-center p-3">
 		<h3>Recipes you can make at home!</h3>
 	</div>
@@ -49,11 +63,12 @@
 	<section class="bg-dark p-3">
 		<div id="recipes_carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
 		<div class="carousel-inner">
-			<!-- First Group of 4 Cards -->
+			<!-- First Carousel Item -->
 			 <!-- These are the starting cards -->
 			<div class="carousel-item active">
 				<div class="row">
-					<div class="col-3">
+					<!-- changing from col-3 to make responsive -->
+					<div class="col-12 col-md-6 col-lg-3">
 						<div class="card">
 							<div class="card-body bg-dark text-light">
 								<a class="nav-link" href="#ramen_noodles"><h5 class="card-title">Salmon Ramen Noodles</h5>
@@ -62,7 +77,7 @@
 							<img src="/images/salmon-ramen-twoplates.webp" class="card-img-top photo-container"></a>
 						</div>
 					</div>
-					<div class="col-3">
+					<div class="col-12 col-md-6 col-lg-3">
 						<div class="card">
 							<div class="card-body bg-dark text-light">
 								<a class="nav-link" href="#mashed_potato_sandwich">
@@ -74,70 +89,32 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-3">
-						<div class="card">
-							<div class="card-body">
-								<h5 class="card-title">Little Tuna</h5>
-								<p class="card-text">sdfgsdf dfsg dfsfgsdfgsdfghgdsfgsdfg sdfg dsfg sdfgdfsg sdfgdfsg sdfgdfsgfds dfsgdfsgsdfg sdfgdfgdfgsdfg</p>
+
+					<!-- Second Carousel Item -->
+					<div class="carousel-item active">
+						<div class="row">
+							<!-- changing from col-3 to make responsive -->
+							<div class="col-12 col-md-6 col-lg-3">
+								<div class="card">
+									<div class="card-body bg-dark text-light">
+										<a class="nav-link" href="#ramen_noodles"><h5 class="card-title">Salmon Ramen Noodles</h5>
+										<p class="card-text">Each bite combines tender salmon, springy noodles, and savory soy sauce in perfect harmony, enhanced by the subtle richness of melted butter. I drain all the water to make sure the noodles are nice and sticky. Dinner for two for about $3. This is THE perfect dish for that special someone you love!<br><br></p>
+									</div>
+									<img src="/images/salmon-ramen-twoplates.webp" class="card-img-top photo-container"></a>
+								</div>
 							</div>
-							<img src="https://placehold.co/450x200" class="card-img-top">
-						</div>
-					</div>
-					<div class="col-3">
-						<div class="card">
-							<img src="https://placehold.co/450x200" class="card-img-top">
-							<div class="card-body">
-								<h5 class="card-title">Pasta</h5>
-								<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+							<div class="col-12 col-md-6 col-lg-3">
+								<div class="card">
+									<div class="card-body bg-dark text-light">
+										<a class="nav-link" href="#mashed_potato_sandwich">
+									<img src="/images/salmon-sandwich-cuttingboard.jpg" class="card-img-top photo-container">
+									<div class="card-body">
+										<h5 class="card-title">Mashed Potato Salmon Sandwich</h5>
+										<p class="card-text">Perfectly pan-seared salmon nestled between 2 slices of recently purchased Hawaiian bread, toasted to perfection, tied together with creamy mashed potatoes, and a drizzle of soy sauce - a surprisingly elegant sandwich that turns simple ingredients into something special.</p></a>
+									</div>
+									</div>
+								</div>
 							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		
-			<!-- Second Group of 4 Cards -->
-			 <!-- wrapped in one single carousel-item -->
-			  <!-- so it shows all 4 cards -->
-			<div class="carousel-item">
-				<div class="row">
-					<div class="col-3">
-						<div class="card">
-							<div class="card-body bg-dark text-light">
-								<a class="nav-link" href="#ramen_noodles"><h5 class="card-title">Salmon Ramen Noodles</h5></a>
-								<p class="card-text">Each bite combines tender salmon, springy noodles, and savory soy sauce in perfect harmony, enhanced by the subtle richness of melted butter.</p>
-							</div>
-							<img src="/images/salmon-ramen-twoplates.webp" class="card-img-top photo-container">
-						</div>
-					</div>
-					<div class="col-3">
-						<div class="card">
-							<div class="card-body bg-dark text-light">
-							<img src="/images/salmon-sandwich-cuttingboard.jpg" class="card-img-top">
-							<div class="card-body">
-								<h5 class="card-title">Mashed Potato Salmon Sandwich</h5>
-								<p class="card-text">Perfectly pan-seared salmon nestled between 2 slices of recently purchased Hawaiian bread, toasted to perfection, tied together with creamy mashed potatoes, and a drizzle of soy sauce - a surprisingly elegant sandwich that turns simple ingredients into something special.</p>
-							</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-3">
-						<div class="card">
-							<div class="card-body">
-								<h5 class="card-title">Pilsner</h5>
-								<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
-							</div>
-							<img src="https://placehold.co/450x200" class="card-img-top">
-						</div>
-					</div>
-					<div class="col-3">
-						<div class="card">
-							<img src="https://placehold.co/450x200" class="card-img-top">
-							<div class="card-body">
-								<h5 class="card-title">Iced Tea</h5>
-								<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
-							</div>
-						</div>
-					</div>
 				</div>
 			</div>
 			</div>
@@ -282,7 +259,6 @@
 				<a class="col mx-2" href="#"><img class="social-icons" src="/images/instagram.webp"></a>
 				<a class="col mx-2" href="#"><img class="social-icons" src="/images/linkedin.webp"></a>
 				<a class="col mx-2" href="#"><img class="social-icons" src="/images/pinterest.webp"></a>
-				<a class="col mx-2" href="#"><img class="social-icons" src="/images/youtube.webp"></a>
 			</div>
 		</div>
 	</section>
@@ -301,5 +277,105 @@
 
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Goofing with Modals Here -->
+<!-- First Modal -->
+<div id="popup-modal-1" class="modal">
+	<div class="modal-content">
+	  <span class="close-btn-1">&timesbar;</span>
+	  <h2 class="fw-bold">Subscribe to the Chef Tristian Newsletter</h2>
+	  <p>Stay up to date with all the newest recipes!</p>
+	  <input type="email" placeholder="Enter your email" class="email-input w-100">
+	  <button class="subscribe-btn">Smash to Subscribe!</button>
+	</div>
+  </div>
+  
+  <!-- Second Modal -->
+  <div id="popup-modal-2" class="modal">
+	<div class="modal-content">
+	  <span class="close-btn-2">&timesbar;</span>
+	  <h2 class="fw-bold">You seem to be enjoying these recipes. Are you sure you don't want to subscribe?</h2>
+	  <p>All the best recipes delivered to you all the time!</p>
+	  <input type="email" placeholder="Please just enter your email" class="email-input w-100">
+	  <button class="subscribe-btn">Smash to Subscribe!</button>
+	</div>
+  </div>
+  
+  <!-- Modal JS -->
+  <!-- First Modal -->
+  <script>
+	const modal1 = document.getElementById('popup-modal-1');
+	const closeBtn1 = document.querySelector('.close-btn-1');
+  
+	setTimeout(() => {
+	  modal1.style.display = 'block';
+	}, 10000);
+  
+	closeBtn1.addEventListener('click', () => {
+	  modal1.style.display = 'none';
+	});
+  
+	window.addEventListener('click', (event) => {
+	  if (event.target === modal1) {
+		modal1.style.display = 'none';
+	  }
+	});
+  
+	// Second Modal Logic
+	const modal2 = document.getElementById('popup-modal-2');
+	const closeBtn2 = document.querySelector('.close-btn-2');
+  
+	setTimeout(() => {
+	  modal2.style.display = 'block';
+	}, 40000);
+  
+	closeBtn2.addEventListener('click', () => {
+	  modal2.style.display = 'none';
+	});
+  
+	window.addEventListener('click', (event) => {
+	  if (event.target === modal2) {
+		modal2.style.display = 'none';
+	  }
+	});
+  </script>
+
+<!-- Sliding Modal -->
+<!-- Side-Sliding Modal -->
+<div id="side-modal" class="side-modal">
+	<div class="side-modal-content">
+	  <span class="close-btn-side">&timesbar;</span>
+	  <h2>Don't miss out!</h2>
+	  <p class="fw-bold">All these recipes straight to you. Just Subscribe!</p>
+	  <img src="/images/strip-ad.webp" class="img-fluid">
+	  <input type="email" placeholder="Enter your email" class="email-input w-100">
+	  <button class="subscribe-btn">Subscribe</button>
+	</div>
+</div>
+
+<!-- Side Ad Modal -->
+<script>
+	// Side-Sliding Modal Logic
+	const sideModal = document.getElementById('side-modal');
+	const closeBtnSide = document.querySelector('.close-btn-side');
+  
+	// Show the modal after 15 seconds
+	setTimeout(() => {
+	  sideModal.style.right = '0'; // Slide in from the right
+	}, 20000);
+  
+	// Close the modal when the close button is clicked
+	closeBtnSide.addEventListener('click', () => {
+	  sideModal.style.right = '-100%'; // Slide out to the right
+	});
+  
+	// Optional: Close the modal when clicking outside of it
+	window.addEventListener('click', (event) => {
+	  if (event.target === sideModal) {
+		sideModal.style.right = '-100%';
+	  }
+	});
+</script>
+
 </body>
 </html>

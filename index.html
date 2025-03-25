@@ -12,25 +12,38 @@
 </head>
 <body class="w-100 p-0 m-0">
 <header class="w-100">
-	<!-- Menu -->
-	 <!-- Trying Container Fluid-->
-	<div class="container-fluid bg-black">
-        <div class="row align-items-center p-3">
-            <!-- Logo -->
-            <div class="col-6 d-flex align-items-center">
-                <img class="img-fluid social-icons" src="/images/logo-white.webp">
-				<p class="fs-5 mx-3 nav-link text-light text-center">Chef Tristian</p>
-            </div>
-            <!-- Nav -->
-            <div class="col-6 text-light">
-                <nav class="d-flex justify-content-end">
-                    <a class="fs-5 mx-3 nav-link" href="index.html">Home</a>
-                    <a class="fs-5 mx-3 nav-link" href="recipes.html">Recipes</a>
-                    <a class="fs-5 mx-3 nav-link" href="#contact">Contact</a>
-                </nav>
-            </div>
-        </div>
-    </div>
+<!-- Navbar -->
+ <!-- Nav with Hamburger -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-black">
+	<div class="container-fluid">
+		<!-- Logo & Brand Name -->
+		<a class="navbar-brand d-flex align-items-center" href="#">
+			<img class="img-fluid social-icons" src="/images/logo-white.webp" width="40">
+			<h2 class="fs-5 mx-3 text-light mb-0">Chef Tristian</h2>
+		</a>
+
+		<!-- the button -->
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#Nav" aria-controls="Nav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<!-- collapse and nav links -->
+		<div class="collapse navbar-collapse text-center" id="Nav">
+			<!-- making sure link are at end, but center when open -->
+			<ul class="navbar-nav justify-content-end w-100">
+				<li class="nav-item">
+					<a class="nav-link fs-5 mx-3" href="index.html">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link fs-5 mx-3" href="recipes.html">Recipes</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link fs-5 mx-3" href="#contact">Contact</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
 	<div class="bg-dark text-light text-center p-3">
 		<h4>Here to Teach You - Elevated Cooking - Innovation - Chef'ing</h4>
 	</div>
@@ -160,7 +173,6 @@
 				<a class="col mx-2" href="#"><img class="social-icons" src="/images/instagram.webp"></a>
 				<a class="col mx-2" href="#"><img class="social-icons" src="/images/linkedin.webp"></a>
 				<a class="col mx-2" href="#"><img class="social-icons" src="/images/pinterest.webp"></a>
-				<a class="col mx-2" href="#"><img class="social-icons" src="/images/youtube.webp"></a>
 			</div>
 		</div>
 	</section>
