@@ -44,30 +44,34 @@
 		</div>
 	</div>
 </nav>
-	<div class="bg-dark text-light text-center p-3">
-		<h4>Here to Teach You - Elevated Cooking - Innovation - Chef'ing</h4>
+	<div class="bg-dark text-light text-center p-3 border border-3 border-white">
+		<h4>I'm Here to Teach You - Elevated Cooking - Innovation - Chef'ing</h4>
 	</div>
 	<!-- Hero Section -->
 	 <!-- I would have rather done this part in CSS -->
-	<div class="bg-dark text-light w-100" style="background-image: url('images/tristian-presenting2.webp'); background-size: cover; background-position: center; height: 550px;">
+	<div class="bg-dark text-light w-100 border border-3 border-white" style="background-image: url('images/tristian-presenting2.webp'); background-size: cover; background-position: center; height: 550px;">
 	</div>
 	<!-- text area -->
-	<div class="d-flex row justify-content-center align-items-center bg-dark p-3">
+	 <!-- get rid of gutters -->
+	<div class="row g-0 justify-content-center align-items-center bg-black p-3 border border-3 border-white">
 		<div class="flex-column d-flex align-items-center justify-content-between p-3 text-light col-12 col-md-6">
-		<h1>Welcome to Simple Cooking with Chef Tristian</h1>
+			<h1>Welcome to Simple Cooking with Chef Tristian</h1>
 		</div>
 		<div class="flex-column d-flex align-items-center justify-content-between p-3 text-light col-12 col-md-6">
-			<p class="border border-start-0 border-end-0 border-2 lh-lg p-3">Chef Tristian emerges as a luminary in the culinary firmament, his approach to cooking embodying a profound paradox - achieving sublime complexity through deliberate simplicity. His mastery lies not in elaborate preparations or rare ingredients, but in the precise calibration of fundamental elements that elevate basic dishes to transcendent heights.</p>
+			<p class="border border-start-0 border-end-0 border-2 lh-lg p-3">
+				Chef Tristian emerges as a luminary in the culinary firmament, his approach to cooking embodying a profound paradox - achieving sublime complexity through deliberate simplicity. His mastery lies not in elaborate preparations or rare ingredients, but in the precise calibration of fundamental elements that elevate basic dishes to transcendent heights.
+			</p>
 		</div>
 	</div>
 </header>
-<main class="bg-dark">
+<main class="bg-white">
+	<div class="container-fluid">
 	<!-- Carousel Section, with Aside -->
-	<section class="row bg-light text-dark w-100">
+	<section class="row bg-light text-dark">
 		<!-- aside on left -->
-		<aside class="d-flex flex-column col-12 col-md-4 align-items-start justify-content-center bg-secondary text-light p-3 border border-3 border-dark">
-			<div class="d-flex flex-column align-items-center justify-content-between w-100 p-3">
-				<div class="col d-flex align-items-center justify-content-between w-100 p-2">
+		<aside class="d-flex flex-column col-12 col-md-4 align-items-start justify-content-center bg-secondary text-light p-3 rounded border border-3 border-white">
+			<div class="d-flex flex-column align-items-center justify-content-between w-100">
+				<div class="col d-flex align-items-center justify-content-between w-100">
 					<div class="col">
 					<h4 class="text-center text-dark fw-bold border border-4 border-dark border-start-0 border-end-0 p-3 mb-5">Check out some of my favorite recipes!</h4>
 					<img class="p-3 rounded-circle border border-2 border-dark bg-light" style="box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);" src="images/hotdog-skewers.webp" height="auto" width="100%">
@@ -91,29 +95,27 @@
 		</aside>
 		<!-- Carousel on right -->
 		 <!-- Start of Carousel -->
-		 <div class="col-12 col-md-8 d-flex align-items-center justify-content-center carousel slide border border-3 border-dark" id="fav_carousel">
+		 <div class="col-12 col-md-8 d-flex align-items-center justify-content-center carousel slide border border-3 border-white p-0 m-0" id="fav_carousel">
 			<!-- Carousel Items -->
-			<div class="carousel-inner p-2">
+			<div class="carousel-inner">
 				<!-- First Card -->
 				 <!-- Bootstrap has a class for img on top on the cards -->
 				<div class="carousel-item active">
 					<div class="card d-flex flex-column align-items-center justify-content-center bg-dark text-light">
-						<img src="images/salmon-ramen-twoplates.webp" class="card-img-top photo-container img-fluid p-3">
+						<img src="images/salmon-ramen-twoplates.webp" class="card-img-top photo-container img-fluid mx-auto">
 						<div class="card-body">
 							<h5 class="card-title fw-bold text-center">Salmon Ramen Noodles</h5>
-							<p class="card-text text-center">Each bite combines tender salmon, springy noodles, and savory soy sauce in perfect harmony, enhanced by the subtle richness of melted butter. I drain all the water to make sure the noodles are nice and sticky. Dinner for two for about $3. This is THE perfect dish for that special someone you love!<br><br></p>
+							<p class="card-text text-center">Each bite combines tender salmon, springy noodles, and savory soy sauce in perfect harmony, enhanced by the subtle richness of melted butter. I drain all the water to make sure the noodles are nice and sticky. Dinner for two for about $3. This is THE perfect dish for that special someone you love!<br></p>
 						</div>
 					</div>
 				</div>
 				<!-- Second Card -->
 				<div class="carousel-item">
 					<div class="card d-flex flex-column align-items-center justify-content-center bg-dark text-light">
-						<div class="card-body">
 						<img src="images/salmon-sandwich-cuttingboard.jpg" class="card-img-top photo-container img-fluid mx-auto">
 						<div class="card-body">
-							<h5 class="card-title text-center">Mashed Potato Salmon Sandwich</h5>
-							<p class="card-text text-center">Perfectly pan-seared salmon nestled between 2 slices of recently purchased Hawaiian bread, toasted to perfection, tied together with creamy mashed potatoes, and a drizzle of soy sauce - a surprisingly elegant sandwich that turns simple ingredients into something special.</p>
-						</div>
+							<h5 class="card-title fw-bold text-center">Mashed Potato Salmon Sandwich</h5>
+							<p class="card-text text-center">Perfectly pan-seared salmon nestled between 2 slices of recently purchased Hawaiian bread, toasted to perfection, tied together with creamy mashed potatoes, and a drizzle of soy sauce - a surprisingly elegant sandwich that turns simple ingredients into something special.<br><br></p>
 						</div>
 					</div>
 				</div>
@@ -149,8 +151,9 @@
 			</button>
 		</div>
 	</section>
+	</div>
 	<!-- About Me Section -->
-	<section class="bg-dark text-light p-3 w-100">
+	<section class="bg-black text-light p-3 w-100 border border-3 border-white">
 		<div class="container">
 			<div class="row d-flex flex-wrap align-items-center justify-content-center">
 				<div class="col-12 col-md-6 d-flex justify-content-center align-items-center p-3">
@@ -165,9 +168,9 @@
 		</div>
 	</section>
 </main>
-<footer class="bg-dark text-light w-100" id="contact">
+<footer class="bg-dark text-light w-100 border border-3 border-white" id="contact">
 	<!-- Logo and Social Icons -->
-	 <div style="background-image: url('images/noodles-boiling.jpg'); background-size: cover; background-position: center; height: 350px;">
+	 <div style="background-image: url('images/noodles-boiling.jpg'); background-size: cover; background-position: center; height: 350px;" class="border border-3 border-white">
 		<section class="d-flex flex-column align-items-center justify-content-center text-light p-3">
 			<div class="d-flex flex-column align-items-center justify-content-center mt-5">
 				<img class="img-fluid p-3 logo" src="images/logo-black.webp">
