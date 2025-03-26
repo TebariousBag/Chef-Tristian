@@ -45,24 +45,19 @@
 	</div>
 </nav>
 
-	<div class="bg-dark text-light text-center p-3">
+	<div class="bg-dark text-light text-center p-3 border border-3 border-white">
 		<h3>Recipes you can make at home!</h3>
 	</div>
 	<!-- Hero Section -->
 	 <!-- I would have rather done this part in CSS -->
-	<div class="bg-dark text-light w-100" style="background-image: url('images/cuttingboard-section.webp'); background-size: cover; background-position: center; height: 550px;">
+	<div class="bg-dark text-light w-100 border border-3 border-white" style="background-image: url('images/cuttingboard-section.webp'); background-size: cover; background-position: center; height: 550px;">
 	</div>
 </section>
 </header>
 
 <main>
-<!-- Carousel Section -->
-<div class="bg-dark text-light text-center p-3">
-    <h4>Scroll through the recipes below!</h4>
-</div>
-
 <!-- Carousel -->
-<section class="bg-dark p-3">
+<section class="bg-dark p-3 border border-3 border-white">
     <div id="recipes_carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
         <div class="carousel-inner">
 
@@ -136,13 +131,15 @@
 	<!-- Recipe Area -->
 	 <!-- Salmon Ramen -->
 	 <section class="container-fluid">
-		<div class="row d-flex align-items-center justify-content-center text-center p-3 mt-3 mb-3" id="ramen_noodles">
+		<div class="row d-flex align-items-center justify-content-center text-center mt-3 mb-3" id="ramen_noodles">
 			<img class="img-fluid p-3 photo-container rounded-circle border border-2 border-dark bg-light" src="images/salmon-ramen-closeup.jpg">
 		</div>
+		<div class="row">
 		<div class="bg-dark text-light p-3">
 		<h1 class="text-center">Salmon Ramen Noodles</h1>
 		<!-- style to contain the max-width of p -->
 		<p class="text-center" style="max-width: 600px; margin: 0 auto;">Behold, dear culinary enthusiast, a masterpiece of modern gastronomy that transcends the boundaries of traditional cooking while embracing the elegant simplicity of contemporary convenience cuisine. This ingenious creation represents a harmonious fusion of East Asian flavors and Western comfort food sensibilities, elevated to an unprecedented level of sophistication through the thoughtful combination of carefully selected ingredients.</p>
+		</div>
 		</div>
 		<!-- ad break -->
 		 <div class="row d-flex align-items-center justify-content-center text-center p-3">
@@ -197,10 +194,12 @@
 		<div class="row d-flex align-items-center justify-content-center text-center p-3 mt-3 mb-3" id="mashed_potato_sandwich">
 			<img class="img-fluid p-3 photo-container rounded-circle border border-2 border-dark bg-light" src="images/salmon-sandwich-closeup.jpg">
 		</div>
+		<div class="row">
 		<div class="bg-dark text-light p-3">
 		<h1 class="text-center">Mashed Potato Salmon Sandwich</h1>
 		<!-- style to contain the max-width of p -->
 		<p class="text-center" style="max-width: 600px; margin: 0 auto;">At its foundation lies a slice of a recently purchased Hawaiian bread loaf from the local Dollar General, carefully selected for its structural integrity and textural contrast. Two meticulously placed slices form the framework of this gastronomic skyscraper, each piece playing a vital role in the overall composition. The bottom slice serves as the foundational anchor, while its counterpart crowns this masterpiece, creating a perfectly balanced sandwich architecture that would make even the most seasoned engineers proud.</p>
+		</div>
 		</div>
 		<!-- ad break -->
 		 <div class="row d-flex align-items-center justify-content-center text-center p-3">
@@ -252,7 +251,7 @@
 
 <footer class="bg-dark text-light w-100" id="contact">
 	<!-- Logo and Social Icons -->
-	<div style="background-image: url('images/noodles-boiling.jpg'); background-size: cover; background-position: center; height: 350px;">
+	 <div style="background-image: url('images/noodles-boiling.jpg'); background-size: cover; background-position: center; height: 350px;" class="border border-3 border-white">
 		<section class="d-flex flex-column align-items-center justify-content-center text-light p-3">
 			<div class="d-flex flex-column align-items-center justify-content-center mt-5">
 				<img class="img-fluid p-3 logo" src="images/logo-black.webp">
@@ -265,6 +264,7 @@
 				</div>
 			</div>
 		</section>
+	</div>
 	<!-- very bottom, copyright and email -->
 	<div class="container-fluid">
 		<div class="row d-flex align-items-center bg-black p-3">
@@ -329,7 +329,7 @@
   
 	setTimeout(() => {
 	  modal2.style.display = 'block';
-	}, 40000);
+	}, 60000);
   
 	closeBtn2.addEventListener('click', () => {
 	  modal2.style.display = 'none';
@@ -364,7 +364,7 @@
 	// Show the modal after 15 seconds
 	setTimeout(() => {
 	  sideModal.style.right = '0'; // Slide in from the right
-	}, 20000);
+	}, 40000);
   
 	// Close the modal when the close button is clicked
 	closeBtnSide.addEventListener('click', () => {
