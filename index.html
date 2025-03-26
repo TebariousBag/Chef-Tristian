@@ -52,11 +52,11 @@
 	<div class="bg-dark text-light w-100" style="background-image: url('images/tristian-presenting2.webp'); background-size: cover; background-position: center; height: 550px;">
 	</div>
 	<!-- text area -->
-	<div class="d-flex justify-content-center align-items-center bg-dark p-3">
-		<div class="flex-column d-flex align-items-center justify-content-between p-3 text-light">
+	<div class="d-flex row justify-content-center align-items-center bg-dark p-3">
+		<div class="flex-column d-flex align-items-center justify-content-between p-3 text-light col-12 col-md-6">
 		<h1>Welcome to Simple Cooking with Chef Tristian</h1>
 		</div>
-		<div class="flex-column d-flex align-items-center justify-content-between p-3 text-light">
+		<div class="flex-column d-flex align-items-center justify-content-between p-3 text-light col-12 col-md-6">
 			<p class="border border-start-0 border-end-0 border-2 lh-lg p-3">Chef Tristian emerges as a luminary in the culinary firmament, his approach to cooking embodying a profound paradox - achieving sublime complexity through deliberate simplicity. His mastery lies not in elaborate preparations or rare ingredients, but in the precise calibration of fundamental elements that elevate basic dishes to transcendent heights.</p>
 		</div>
 	</div>
@@ -152,10 +152,10 @@
 	<!-- About Me Section -->
 	<section class="bg-dark text-light p-3 w-100">
 		<div class="d-flex row justify-content-center align-items-center bg-dark">
-		  <div class="col-6 align-items-center justify-content-between h-100 text-light p-3">
+		  <div class="col-12 md-col-6 align-items-center justify-content-between h-100 text-light p-3">
 			  <img class="rounded-circle img-fluid" src="https://placehold.co/450x200">
 		  </div>
-		  <div class="col-6 d-flex flex-column align-items-center justify-content-center h-100 text-light border border-2 border-light border-start-0 border-end-0 p-3">
+		  <div class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-center h-100 text-light border border-2 border-light border-start-0 border-end-0 p-3">
 			  <h2 class="text-center p-2">Who is this Chef?</h2>
 			  <p class="text-center">Chef Tristian was born and raised in Tulsa, Oklahoma. He continues to push the boundaries of culinary innovation while remaining grounded in his core philosophy: that great cooking should be accessible to everyone, regardless of skill level or economic means. His kitchen serves as a laboratory for creativity, where traditional techniques meet modern sensibilities, and where every dish tells a story of transformation and possibility. Through his work, he inspires a new generation of cooks to view familiar ingredients with fresh eyes and to understand that true culinary excellence resides in simplicity, respect for ingredients, and dedication to craft.</p>
 		  </div>
@@ -165,17 +165,18 @@
 <footer class="bg-dark text-light w-100" id="contact">
 	<!-- Logo and Social Icons -->
 	 <div style="background-image: url('images/noodles-boiling.jpg'); background-size: cover; background-position: center; height: 350px;">
-	<section class="d-flex flex-column align-items-center justify-content-center text-light p-3">
-		<div class="d-flex flex-column align-items-center justify-content-center mt-5">
-			<img class="img-fluid p-3 logo" src="images/logo-black.webp">
-			<div class="d-flex row p-3">
-				<a class="col mx-2" href="#"><img class="social-icons" src="images/facebook.webp"></a>
-				<a class="col mx-2" href="#"><img class="social-icons" src="images/instagram.webp"></a>
-				<a class="col mx-2" href="#"><img class="social-icons" src="images/linkedin.webp"></a>
-				<a class="col mx-2" href="#"><img class="social-icons" src="images/pinterest.webp"></a>
+		<section class="d-flex flex-column align-items-center justify-content-center text-light p-3">
+			<div class="d-flex flex-column align-items-center justify-content-center mt-5">
+				<img class="img-fluid p-3 logo" src="images/logo-black.webp">
+				<!-- flex wrap for smaller screens -->
+				<div class="d-flex flex-wrap align-items-center justify-content-center p-3">
+					<a class="mx-2" href="#"><img class="social-icons" src="images/facebook.webp"></a>
+					<a class="mx-2" href="#"><img class="social-icons" src="images/instagram.webp"></a>
+					<a class="mx-2" href="#"><img class="social-icons" src="images/linkedin.webp"></a>
+					<a class="mx-2" href="#"><img class="social-icons" src="images/pinterest.webp"></a>
+				</div>
 			</div>
-		</div>
-	</section>
+		</section>
 	</div>
 	<!-- very bottom, copyright and email -->
 	<div class="container-fluid">
