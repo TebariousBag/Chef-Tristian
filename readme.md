@@ -14,7 +14,8 @@ SOME OF THESE ARE ON THE SECOND PAGE UNDER THE RECIPE LINK
 <img width="1259" alt="Screenshot 2025-03-27 at 9 51 35 AM" src="https://github.com/user-attachments/assets/daacc856-59e1-48b4-96ef-06b4db8dc789" />
 
 * 3. Single Item Carousel
-<img width="1259" alt="Screenshot 2025-03-27 at 9 51 35 AM" src="https://github.com/user-attachments/assets/896ae906-5c1b-421d-a310-c373bba498ab" />
+![Uploading Screenshot 2025-03-27 at 9.53.32 AM.png…]()
+
 
 * 4. Multiple Item Carousel - on Recipes Page
 <img width="1527" alt="Screenshot 2025-03-27 at 10 01 56 AM" src="https://github.com/user-attachments/assets/8fa47711-40d0-40d9-b291-8de91551149b" />
