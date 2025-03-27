@@ -27,6 +27,9 @@ SOME OF THESE ARE ON THE SECOND PAGE UNDER THE RECIPE LINK
 
 * 7. Free Section - Most of Recipes page is free section
 <img width="576" alt="Screenshot 2025-03-27 at 10 09 29 AM" src="https://github.com/user-attachments/assets/7e3eb03f-4879-4243-806d-0b4b463ad06b" />
+  free section on home page
+<img width="1563" alt="Screenshot 2025-03-27 at 4 12 31 PM" src="https://github.com/user-attachments/assets/2486535f-b313-4a75-b6a6-37d816e29a56" />
+
 
 * 8. Footer
 <img width="1583" alt="Screenshot 2025-03-27 at 10 10 50 AM" src="https://github.com/user-attachments/assets/c94359ac-e591-42a4-9e05-7d416f521f14" />
