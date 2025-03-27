@@ -30,16 +30,10 @@ SOME OF THESE ARE ON THE SECOND PAGE UNDER THE RECIPE LINK
   free section on home page
 <img width="1563" alt="Screenshot 2025-03-27 at 4 12 31 PM" src="https://github.com/user-attachments/assets/2486535f-b313-4a75-b6a6-37d816e29a56" />
 
-
 * 8. Footer
 <img width="1583" alt="Screenshot 2025-03-27 at 10 10 50 AM" src="https://github.com/user-attachments/assets/c94359ac-e591-42a4-9e05-7d416f521f14" />
 
 
-
-
-* responsive Multiple Item Carousel
-* Drop Down Menu
-* Section with an Aside
 ## Topic
 I chose to make a home cooking recipe website. I do like to cook and I find it annoying when I look up a recipe and its just so much filler and ads and I just want to get to the recipe. This is more of a joke where I am posing as a chef with creative recipes of my own. I actually cooked the recipes and made recipe cards and took photos along the way.
 
