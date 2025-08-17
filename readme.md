@@ -2,7 +2,6 @@
 
 > **A satirical spoof of recipe websites that mocks the endless ads, filler content, and life stories that plague online cooking sites. I just want the recipe.**
 
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-GitHub%20Pages-brightgreen)](https://tebariousbag.github.io/atlas-bootstrap/)
 [![Bootstrap](https://img.shields.io/badge/Bootstrap-5.3.0-7952B3)](https://getbootstrap.com/)
 [![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
 [![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
