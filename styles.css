@@ -231,6 +231,8 @@
 }
 
 /* ===== RESPONSIVE DESIGN ===== */
+
+/* Tablet and Small Laptop Breakpoint */
 @media (max-width: 768px) {
     .hero-section {
         height: 400px;
@@ -263,6 +265,7 @@
     }
 }
 
+/* Small Mobile Phone Breakpoint */
 @media (max-width: 576px) {
     .hero-section {
         height: 300px;
