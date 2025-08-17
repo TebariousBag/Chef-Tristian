@@ -1,3 +1,4 @@
+/* ===== NAVIGATION STYLES ===== */
 .navbar-dark .navbar-nav .nav-link:hover {
     color: #a1a7b6 !important;
 }
@@ -6,16 +7,23 @@
     color: white !important;
 }
 
-
+/* ===== LOGO AND IMAGE STYLES ===== */
 .logo {
 	width: 150px;
 	height: auto;
 	display: block;
 }
+
 .social-icons {
 	width: 50px;
 	height: 50px;
 	border: 2px solid white;
+	transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.social-icons:hover {
+	transform: scale(1.1);
+	border-color: #a1a7b6;
 }
 
 .photo-container {
@@ -24,12 +32,132 @@
 	display: block;
 }
 
+/* ===== RECIPE STYLES ===== */
+.recipe-description {
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+/* ===== HERO SECTION STYLES ===== */
+.hero-section {
+	background-image: url('images/tristian-presenting2.webp');
+	background-size: cover;
+	background-position: center;
+	height: 550px;
+}
+
+.footer-hero {
+	background-image: url('images/noodles-boiling.jpg');
+	background-size: cover;
+	background-position: center;
+	height: 350px;
+}
+
+/* ===== SIDEBAR STYLES ===== */
+.sidebar-image {
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sidebar-image:hover {
+	transform: scale(1.05);
+	box-shadow: 0 6px 15px rgba(0, 0, 0, 0.6);
+}
+
+/* ===== DROPDOWN MENU STYLES ===== */
+.dropdown-menu {
+	min-width: 100% !important;
+	max-width: 100%;
+	word-wrap: break-word;
+	overflow-wrap: break-word;
+}
+
+.dropdown-item {
+	white-space: normal;
+	word-wrap: break-word;
+	padding: 0.5rem 1rem;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+	transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.dropdown-item:last-child {
+	border-bottom: none;
+}
+
+.dropdown-item:hover {
+	background-color: rgba(255, 255, 255, 0.1) !important;
+	color: #fff !important;
+}
+
+.dropdown-item:active {
+	background-color: rgba(255, 255, 255, 0.2) !important;
+	color: #fff !important;
+}
+
+/* ===== CAROUSEL STYLES ===== */
 .carousel-item {
 	transition: transform 2s ease-in-out, opacity 2s ease-in-out;
 }
 
-/* Subscribe Modals */
-  .modal {
+.carousel-control-prev,
+.carousel-control-next {
+	left: 10px;
+	width: auto;
+	padding: 0;
+}
+
+.carousel-control-next {
+	left: auto;
+	right: 10px;
+}
+
+/* Recipe Carousel Specific Styles */
+#recipes_carousel .carousel-item {
+	min-height: 400px;
+}
+
+#recipes_carousel .card {
+	height: 100%;
+	max-width: 500px;
+	margin: 0 auto;
+}
+
+#recipes_carousel .card-img-top {
+	height: 200px;
+	object-fit: cover;
+}
+
+/* Carousel Indicators */
+.carousel-indicators {
+	bottom: -50px;
+}
+
+.carousel-indicators button {
+	background-color: #6c757d;
+	border: 2px solid #6c757d;
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	margin: 0 5px;
+}
+
+.carousel-indicators button.active {
+	background-color: #fff;
+	border-color: #fff;
+}
+
+/* ===== CARD STYLES ===== */
+.card {
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* ===== MODAL STYLES ===== */
+.modal {
     display: none; /* Hidden by default */
     position: fixed;
     z-index: 500;
@@ -38,40 +166,45 @@
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
-  }
-  .modal-content {
+}
+
+.modal-content {
     background-color: white;
     margin: 15% auto;
     padding: 20px;
     border-radius: 10px;
     width: 50%;
     text-align: center;
-  }
-  .close-btn {
+}
+
+.close-btn {
     color: black;
     float: right;
     font-size: 24px;
     cursor: pointer;
-  }
-  .email-input {
+}
+
+.email-input {
     width: 80%;
     padding: 10px;
     margin: 10px 0;
-  }
-  .subscribe-btn {
+}
+
+.subscribe-btn {
     padding: 10px 20px;
     background-color: #2a2a2a;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-  }
-  .subscribe-btn:hover {
-    background-color: #656e78;
-  }
+    transition: background-color 0.3s ease;
+}
 
-/* Ad Side Modal */
-/* Side-Sliding Modal Styles */
+.subscribe-btn:hover {
+    background-color: #656e78;
+}
+
+/* ===== SIDE MODAL STYLES ===== */
 .side-modal {
 	position: fixed;
 	top: 0;
@@ -82,17 +215,102 @@
 	box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
 	z-index: 1000;
 	transition: right 0.5s ease; /* Smooth slide-in effect */
-  }
-  
-  .side-modal-content {
+}
+
+.side-modal-content {
 	padding: 20px;
 	text-align: center;
-  }
-  
-  .close-btn-side {
+}
+
+.close-btn-side {
 	position: absolute;
 	top: 10px;
 	left: 10px;
 	font-size: 24px;
 	cursor: pointer;
-  }
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 768px) {
+    .hero-section {
+        height: 400px;
+    }
+    
+    .footer-hero {
+        height: 250px;
+    }
+    
+    .photo-container {
+        max-width: 100%;
+    }
+    
+    /* Mobile carousel adjustments */
+    #recipes_carousel .carousel-item {
+        min-height: 350px;
+    }
+    
+    #recipes_carousel .card {
+        max-width: 100%;
+    }
+    
+    .carousel-control-prev,
+    .carousel-control-next {
+        display: none; /* Hide controls on mobile for cleaner look */
+    }
+    
+    .carousel-indicators {
+        bottom: -30px;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-section {
+        height: 300px;
+    }
+    
+    .footer-hero {
+        height: 200px;
+    }
+    
+    .social-icons {
+        width: 40px;
+        height: 40px;
+    }
+    
+    /* Small mobile carousel adjustments */
+    #recipes_carousel .carousel-item {
+        min-height: 300px;
+    }
+    
+    #recipes_carousel .card-img-top {
+        height: 150px;
+    }
+}
+
+/* ===== ACCESSIBILITY IMPROVEMENTS ===== */
+@media (prefers-reduced-motion: reduce) {
+    .carousel-item,
+    .card,
+    .social-icons,
+    .sidebar-image {
+        transition: none;
+    }
+}
+
+/* ===== PRINT STYLES ===== */
+@media print {
+    .navbar,
+    .carousel-control-prev,
+    .carousel-control-next,
+    .social-icons {
+        display: none !important;
+    }
+    
+    .hero-section,
+    .footer-hero {
+        background-image: none !important;
+        background-color: #f0f0f0 !important;
+        height: auto !important;
+        min-height: 200px;
+    }
+}
